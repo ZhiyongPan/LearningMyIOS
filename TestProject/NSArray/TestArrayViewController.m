@@ -38,8 +38,8 @@
     NSArray *modelArray2 = @[model4, model2, model5];
     
     TestArrayModel *model6 = [[TestArrayModel alloc] initWithMyID:@"ca" name:@"heihei" age:10];
-    TestArrayModel *model7 = [[TestArrayModel alloc] initWithMyID:@"aa" name:@"heihei" age:12];
-    TestArrayModel *model8 = [[TestArrayModel alloc] initWithMyID:@"aa" name:@"heihei" age:11];
+    TestArrayModel *model7 = [[TestArrayModel alloc] initWithMyID:@"aa" name:@"hihi" age:12];
+    TestArrayModel *model8 = [[TestArrayModel alloc] initWithMyID:@"aa" name:@"hihi" age:11];
     NSArray *modelArray3 = @[model6, model7, model8];
     
 //    self.array = [NSArray arrayWithObjects:@"1",@"2",@"3", nil];
@@ -136,7 +136,35 @@
 //    NSString *str = model1[1];
     
     //--------------------------------------数组遍历------------------------------------------------//
-    //commit succeed!
+    //遍历的目的是为了获取某个元素，所以符合这个条件的方法都可以说是遍历
+    //主要有以下几种：
+    //1、for循环
+    //2、forin（快速枚举）
+    //3、makeObjectsPerformSelector
+    //4、kvc集合运算符
+    //5、enumerateObjectsUsingBlock
+    //6、enumerateUsingOptions(NSEnumerationConcurrent)
+    //7、display_apply
+    
+    //结论
+    //1、在数组数量很少的时候，各种方法效率差不多(kvc耗时约是其他方法耗时的两倍，但是依然很少)
+    //2、在数组数量较多（以10万记）的时候差距就显示出来了，kvc非常慢，forin最少makeObjectsPerformSelector也比较少，enumerateObjectsUsingBlock、enumerateUsingOptions(NSEnumerationConcurrent)、display_apply差不多，约是forin和makeObjectsPerformSelector的十几倍，而for循环比这三个又要差上一些（约是他们的两倍）。要注意的是enumerateUsingOptions(NSEnumerationConcurrent)和display_apply是和CPU有关的，CPU核数越多效果越好。===数据：当数组数量10万的时候：
+    //------
+           // 经典for循环 - 1.246721
+           // for in (NSFastEnumeration) - 0.025955
+           // makeObjectsPerformSelector - 0.068234
+           // kvc集合运算符(@sum.number) - 21.677246
+           // enumerateObjectsUsingBlock - 0.586034
+           // enumerateObjectsWithOptions(NSEnumerationConcurrent) - 0.722548
+           // dispatch_apply(Concurrent) - 0.607100
+    //------
+    //3、在遍历的同时执行耗时操作，以数组数量为100来看，后两种最好，其他的约是他们的两三倍。同样，后两种和CPU核数有关
+    
+    //kvc集合运算符即valueForKeyPath
+//    NSArray<NSString *> *nameArray = [modelArray3 valueForKeyPath:@"@unionOfObjects.name"];
+//    NSArray<NSString *> *nameArray2 = [modelArray3 valueForKeyPath:@"@distinctUnionOfObjects.name"];
+//    NSArray *kvcArray = [@[modelArray, modelArray2] valueForKeyPath:@"@unionOfArrays.name"];
+//    NSArray *kvcArray2 = [@[modelArray, modelArray2] valueForKeyPath:@"@distinctUnionOfArrays.name"];
     
     NSLog(@"hahahahha");
 }
