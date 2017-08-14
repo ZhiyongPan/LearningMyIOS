@@ -10,6 +10,8 @@
 		4C14795F1F0BAF0F00F5D187 /* TestSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14795E1F0BAF0F00F5D187 /* TestSet.m */; };
 		4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */; };
 		4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */; };
+		4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */; };
+		4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */; };
 		4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C85566C1F0D06B0000F8996 /* TestBlock.m */; };
 		4C8A91DB1F03CD6300D82F7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91DA1F03CD6300D82F7B /* main.m */; };
 		4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91DD1F03CD6300D82F7B /* AppDelegate.m */; };
@@ -20,12 +22,17 @@
 		4C8A91FF1F03CD6400D82F7B /* TestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91FE1F03CD6400D82F7B /* TestProjectUITests.m */; };
 		4C8A920E1F03CDC700D82F7B /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A920D1F03CDC700D82F7B /* FatherViewController.m */; };
 		4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A92101F03CDDD00D82F7B /* SonViewController.m */; };
-		4CAB58F41F27752800F0B227 /* TestArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAB58F31F27752800F0B227 /* TestArrayModel.m */; };
 		4CC02D621F1E3CA000317418 /* SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC02D611F1E3CA000317418 /* SubArray.m */; };
 		4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE11F551F2095B0003416B8 /* TestGCDViewController.m */; };
 		4CEDD7DE1F0531E8006835BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEDD7DD1F0531E8006835BF /* Foundation.framework */; };
 		4CFD1EC61F0E617A00191EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */; };
 		4CFD1ECC1F0F4DC200191EA5 /* TestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */; };
+		4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */; };
+		4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */; };
+		4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */; };
+		4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */; };
+		4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */; };
+		4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,10 @@
 		4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayViewController.m; sourceTree = "<group>"; };
 		4C1F8A3E1F0FAEDD003875DD /* NSArray+testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+testArray.h"; sourceTree = "<group>"; };
 		4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+testArray.m"; sourceTree = "<group>"; };
+		4C5D1F651F29BA8800BEAE77 /* TestArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayModel.h; sourceTree = "<group>"; };
+		4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayModel.m; sourceTree = "<group>"; };
+		4C5D1F691F29BB1D00BEAE77 /* TestDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDictionaryViewController.h; sourceTree = "<group>"; };
+		4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDictionaryViewController.m; sourceTree = "<group>"; };
 		4C85566B1F0D06B0000F8996 /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
 		4C85566C1F0D06B0000F8996 /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		4C8A91D61F03CD6300D82F7B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +84,6 @@
 		4C8A920D1F03CDC700D82F7B /* FatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherViewController.m; sourceTree = "<group>"; };
 		4C8A920F1F03CDDD00D82F7B /* SonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonViewController.h; sourceTree = "<group>"; };
 		4C8A92101F03CDDD00D82F7B /* SonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonViewController.m; sourceTree = "<group>"; };
-		4CAB58F21F27752800F0B227 /* TestArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayModel.h; sourceTree = "<group>"; };
-		4CAB58F31F27752800F0B227 /* TestArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayModel.m; sourceTree = "<group>"; };
 		4CC02D601F1E3CA000317418 /* SubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubArray.h; sourceTree = "<group>"; };
 		4CC02D611F1E3CA000317418 /* SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubArray.m; sourceTree = "<group>"; };
 		4CE11F541F2095B0003416B8 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
@@ -83,6 +92,18 @@
 		4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CFD1ECA1F0F4DC200191EA5 /* TestAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnimationViewController.h; sourceTree = "<group>"; };
 		4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnimationViewController.m; sourceTree = "<group>"; };
+		4CFD8BFB1F41C9DF005D3C18 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		4CFD8C041F41CE01005D3C18 /* TestDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDetailViewController.h; sourceTree = "<group>"; };
+		4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDetailViewController.m; sourceTree = "<group>"; };
+		4CFD8C071F41CE0E005D3C18 /* TestMyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMyInfoViewController.h; sourceTree = "<group>"; };
+		4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMyInfoViewController.m; sourceTree = "<group>"; };
+		4CFD8C0B1F41CE92005D3C18 /* TestHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHomePageViewController.h; sourceTree = "<group>"; };
+		4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHomePageViewController.m; sourceTree = "<group>"; };
+		4CFD8C0E1F41CEFF005D3C18 /* TestMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMainViewController.h; sourceTree = "<group>"; };
+		4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMainViewController.m; sourceTree = "<group>"; };
+		4CFD8C111F41D02B005D3C18 /* TestNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNavigationController.h; sourceTree = "<group>"; };
+		4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +154,24 @@
 			path = NSArray;
 			sourceTree = "<group>";
 		};
+		4C5D1F641F29BA8800BEAE77 /* NSArrayModel */ = {
+			isa = PBXGroup;
+			children = (
+				4C5D1F651F29BA8800BEAE77 /* TestArrayModel.h */,
+				4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */,
+			);
+			path = NSArrayModel;
+			sourceTree = "<group>";
+		};
+		4C5D1F681F29BAA800BEAE77 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				4C5D1F691F29BB1D00BEAE77 /* TestDictionaryViewController.h */,
+				4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
 		4C85566A1F0D0697000F8996 /* TestBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +205,8 @@
 		4C8A91D81F03CD6300D82F7B /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				4CFD8BFA1F41C9C3005D3C18 /* TestViewController */,
+				4C5D1F681F29BAA800BEAE77 /* NSDictionary */,
 				4CAB58F11F27751500F0B227 /* Model */,
 				4CE11F531F20958D003416B8 /* TestGCD */,
 				4C1F8A371F0FAD9F003875DD /* NSArray */,
@@ -218,8 +259,7 @@
 		4CAB58F11F27751500F0B227 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4CAB58F21F27752800F0B227 /* TestArrayModel.h */,
-				4CAB58F31F27752800F0B227 /* TestArrayModel.m */,
+				4C5D1F641F29BA8800BEAE77 /* NSArrayModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -256,6 +296,57 @@
 				4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4CFD8BFA1F41C9C3005D3C18 /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4CFD8C0A1F41CE85005D3C18 /* HomePage */,
+				4CFD8BFE1F41CDD5005D3C18 /* Detail */,
+				4CFD8BFF1F41CDD5005D3C18 /* Main */,
+				4CFD8C001F41CDD5005D3C18 /* MyInfo */,
+				4CFD8BFB1F41C9DF005D3C18 /* Mediator.h */,
+				4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */,
+			);
+			path = TestViewController;
+			sourceTree = "<group>";
+		};
+		4CFD8BFE1F41CDD5005D3C18 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4CFD8C041F41CE01005D3C18 /* TestDetailViewController.h */,
+				4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		4CFD8BFF1F41CDD5005D3C18 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4CFD8C0E1F41CEFF005D3C18 /* TestMainViewController.h */,
+				4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */,
+				4CFD8C111F41D02B005D3C18 /* TestNavigationController.h */,
+				4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4CFD8C001F41CDD5005D3C18 /* MyInfo */ = {
+			isa = PBXGroup;
+			children = (
+				4CFD8C071F41CE0E005D3C18 /* TestMyInfoViewController.h */,
+				4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */,
+			);
+			path = MyInfo;
+			sourceTree = "<group>";
+		};
+		4CFD8C0A1F41CE85005D3C18 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				4CFD8C0B1F41CE92005D3C18 /* TestHomePageViewController.h */,
+				4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */,
+			);
+			path = HomePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,14 +485,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */,
 				4C14795F1F0BAF0F00F5D187 /* TestSet.m in Sources */,
 				4C8A91E11F03CD6300D82F7B /* ViewController.m in Sources */,
 				4CC02D621F1E3CA000317418 /* SubArray.m in Sources */,
 				4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */,
-				4CAB58F41F27752800F0B227 /* TestArrayModel.m in Sources */,
+				4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */,
+				4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */,
 				4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */,
 				4C8A920E1F03CDC700D82F7B /* FatherViewController.m in Sources */,
+				4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */,
 				4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */,
+				4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */,
+				4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */,
+				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
+				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
 				4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */,
 				4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */,
 				4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */,
