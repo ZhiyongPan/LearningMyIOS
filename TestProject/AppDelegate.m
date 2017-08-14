@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Mediator.h"
 
 @interface AppDelegate ()
 
@@ -47,5 +48,13 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+
+#pragma mark - Private
+
+- (void)setMainViewController
+{
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    [[Mediator sharedObject] setupWithNavigationController:navigationController];
+}
 
 @end

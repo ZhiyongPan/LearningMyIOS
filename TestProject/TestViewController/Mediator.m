@@ -8,6 +8,28 @@
 
 #import "Mediator.h"
 
+@interface Mediator ()
+
+
+
+@end
+
 @implementation Mediator
+
++ (instancetype)sharedObject
+{
+    static id _sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedInstance = [[self alloc] init];
+    });
+    return _sharedInstance;
+}
+
+- (void)setupWithNavigationController:(UINavigationController *)navigationContrller
+{
+    self.navigationController = navigationContrller;
+    self.navigationController.delegate = self;
+}
 
 @end

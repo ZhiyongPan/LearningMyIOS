@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Mediator : NSObject
+
+@property (nonatomic, weak) UINavigationController *navigationController;
+
++ (instancetype)sharedObject;
+
+- (void)setupWithNavigationController:(UINavigationController *)navigationContrller;
 
 @end
