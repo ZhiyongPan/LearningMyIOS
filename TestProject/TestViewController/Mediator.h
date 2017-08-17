@@ -17,4 +17,6 @@
 
 - (void)setupWithNavigationController:(UINavigationController *)navigationContrller;
 
++ (UIViewController *)viewControllerWithName:(NSString *)name params:(NSDictionary *)params;
+
 @end

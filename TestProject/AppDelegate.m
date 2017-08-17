@@ -8,8 +8,13 @@
 
 #import "AppDelegate.h"
 #import "Mediator.h"
+#import "TestMainViewController.h"
+#import <AVOSCloud/AVOSCloud.h>
+#import "TestArrayModel.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) TestMainViewController* mainVC;
 
 @end
 
@@ -18,6 +23,35 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [AVOSCloud setApplicationId:@"ePbQVTjo0fnDWwRmmYhzrJQj-9Nh9j0Va" clientKey:@"WVfUf7gmyrD8tEKBT9y2AGLW"];
+    
+//    AVObject *testObject = [AVObject objectWithClassName:@"TestArrayModel"];
+//    [testObject setObject:@"panzhiyong" forKey:@"name"];
+//    [testObject setObject:@"15715651072" forKey:@"myID"];
+//    [testObject setObject:@(25) forKey:@"age"];
+//    [testObject setObject:@[@"str1", @"str2", @"str5"] forKey:@"array"];
+//    [testObject save];
+    
+    AVQuery *query = [AVQuery queryWithClassName:@"TestArrayModel"];
+    [query orderByDescending:@"createdAt"];
+    // owner 为 Pointer，指向 _User 表
+    [query includeKey:@"name"];
+    // image 为 File
+    [query includeKey:@"myID"];
+    [query includeKey:@"age"];
+    [query includeKey:@"array"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            AVObject *object = [objects firstObject];
+            NSMutableDictionary *dict = object[@"localData"];
+            NSString *name = [dict objectForKey:@"name"];
+            NSString *myID = [dict objectForKey:@"myID"];
+            NSInteger age = [[dict objectForKey:@"age"] integerValue];
+            NSArray *array = [dict objectForKey:@"array"];
+            NSLog(@"haha %@---%@---%@---%@",name,myID,@(age),array);
+        }
+    }];
     return YES;
 }
 
@@ -55,6 +89,8 @@
 {
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     [[Mediator sharedObject] setupWithNavigationController:navigationController];
+    self.mainVC = (TestMainViewController *)navigationController.visibleViewController;
+    
 }
 
 @end
