@@ -166,6 +166,16 @@
 //    NSArray *kvcArray = [@[modelArray, modelArray2] valueForKeyPath:@"@unionOfArrays.name"];
 //    NSArray *kvcArray2 = [@[modelArray, modelArray2] valueForKeyPath:@"@distinctUnionOfArrays.name"];
     
+    //-------------------------------判断一个数组是否包含另一个数组-------------------------//
+    NSArray *array = @[@"1", @"2", @"3", @"4", @"5", @"6"];
+    NSArray *array2 = @[@"3", @"5", @"6"];
+    
+    NSSet *set = [NSSet setWithArray:array];
+    NSSet *set2 = [NSSet setWithArray:array2];
+    BOOL ifContain = [set2 isSubsetOfSet:set];
+    //因为NSSet底层是Hash表，所以查找快速，比较起来也就快一点
+    
+    
     NSLog(@"hahahahha");
 }
 
