@@ -24,6 +24,7 @@
 		4C8A920E1F03CDC700D82F7B /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A920D1F03CDC700D82F7B /* FatherViewController.m */; };
 		4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A92101F03CDDD00D82F7B /* SonViewController.m */; };
 		4CC02D621F1E3CA000317418 /* SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC02D611F1E3CA000317418 /* SubArray.m */; };
+		4CDBCBEF1F504A1A00B4ABB4 /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */; };
 		4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE11F551F2095B0003416B8 /* TestGCDViewController.m */; };
 		4CEDD7DE1F0531E8006835BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEDD7DD1F0531E8006835BF /* Foundation.framework */; };
 		4CFD1EC61F0E617A00191EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */; };
@@ -87,6 +88,8 @@
 		4C8A92101F03CDDD00D82F7B /* SonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonViewController.m; sourceTree = "<group>"; };
 		4CC02D601F1E3CA000317418 /* SubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubArray.h; sourceTree = "<group>"; };
 		4CC02D611F1E3CA000317418 /* SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubArray.m; sourceTree = "<group>"; };
+		4CDBCBED1F504A1A00B4ABB4 /* CoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
+		4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
 		4CE11F541F2095B0003416B8 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
 		4CE11F551F2095B0003416B8 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
 		4CEDD7DD1F0531E8006835BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -211,6 +214,7 @@
 		4C8A91D81F03CD6300D82F7B /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */,
 				4CFD8BFA1F41C9C3005D3C18 /* TestViewController */,
 				4C5D1F681F29BAA800BEAE77 /* NSDictionary */,
 				4CAB58F11F27751500F0B227 /* Model */,
@@ -277,6 +281,15 @@
 				4CE11F551F2095B0003416B8 /* TestGCDViewController.m */,
 			);
 			path = TestGCD;
+			sourceTree = "<group>";
+		};
+		4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */ = {
+			isa = PBXGroup;
+			children = (
+				4CDBCBED1F504A1A00B4ABB4 /* CoreAnimationViewController.h */,
+				4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */,
+			);
+			path = CoreAnimationPractice;
 			sourceTree = "<group>";
 		};
 		4CEDD7DC1F0531E8006835BF /* Frameworks */ = {
@@ -565,6 +578,7 @@
 				4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */,
 				4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */,
 				4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */,
+				4CDBCBEF1F504A1A00B4ABB4 /* CoreAnimationViewController.m in Sources */,
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
 				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
 				4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */,
