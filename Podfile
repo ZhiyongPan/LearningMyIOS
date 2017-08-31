@@ -11,4 +11,6 @@ pod 'AVOSCloud'
 pod 'AVOSCloudIM'
 pod 'AVOSCloudCrashReporting'
 
+pod 'pop', '~> 1.0'
+
 end
