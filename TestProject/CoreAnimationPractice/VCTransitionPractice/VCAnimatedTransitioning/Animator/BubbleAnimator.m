@@ -52,7 +52,6 @@
     toView.alpha = 0.0;
     [containerView addSubview:toView];
     
-    
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     
     [UIView animateWithDuration:duration animations:^{

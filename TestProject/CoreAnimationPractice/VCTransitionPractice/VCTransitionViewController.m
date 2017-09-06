@@ -9,6 +9,8 @@
 #import "VCTransitionViewController.h"
 #import "VCAnimatedTransitioningViewController.h"
 
+
+
 @interface VCTransitionViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -22,6 +24,7 @@
     // Do any additional setup after loading the view.
     
     [self configTableView];
+    
 }
 
 - (void)configTableView

@@ -8,15 +8,26 @@
 
 #import "CoreAnimationViewController.h"
 #import "AnimateTypesViewController.h"
+#import "PZYView.h"
+#import "UIView+CustomBlockAnimation.h"
 
 #define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+typedef NS_ENUM(NSInteger, SubViewTag){
+    SubViewTagBasicAndKeyFrame  =  0>>1,
+    SubViewTagGroup1            =  0>>2,
+    SubViewTagGroup2            =  0>>3,
+    SubViewTagPZYView           =  0>>4
+};
 
 @interface CoreAnimationViewController ()
 
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UIImageView *group_image1;
 @property (nonatomic, strong) UIImageView *group_image2;
+
+@property (nonatomic, strong) PZYView *pzyView;
 
 @end
 
@@ -31,7 +42,9 @@
     [self addButtons];
 //    [self addAnimationView];
     
-    [self addGroupAnimationViews];
+//    [self addGroupAnimationViews];
+    
+    [self addPZYView];
     
     NSLog(@"CoreAnimationViewController viewDidLoad");
 }
@@ -43,6 +56,8 @@
     [self addAnimationGroupStartButton];
     
     [self addViewControllerTransitionStartButton];
+    
+    [self addTestPZYViewStartButton];
 }
 
 #pragma mark add buttons
@@ -99,12 +114,26 @@
     [self.view addSubview:button];
 }
 
+- (void)addTestPZYViewStartButton
+{
+    UIButton *button = [[UIButton alloc] init];
+    button.frame = CGRectMake(20.0, 560.0, 80.0, 30.0);
+    [button setTitle:@"PZYView" forState:UIControlStateNormal];
+    [button.titleLabel setFont:[UIFont systemFontOfSize:16.0]];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor greenColor];
+    [button addTarget:self action:@selector(beginPZYViewButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+}
+
 #pragma mark add views
 
 - (void)addAnimationView
 {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20.0, 150.0, 120.0, 100.0)];
     imageView.image = [UIImage imageNamed:@"Horse"];
+    imageView.tag = SubViewTagBasicAndKeyFrame;
     self.imageView = imageView;
     [self.view addSubview:imageView];
 }
@@ -113,16 +142,40 @@
 {
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-130)/2.0, 150.0, 130.0, 130.0)];
     imageView.image = [UIImage imageNamed:@"group_image1"];
+    imageView.tag = SubViewTagGroup1;
 //    imageView.hidden = YES;
     self.group_image1 = imageView;
     [self.view addSubview:imageView];
     
     UIImageView *imageView2 = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-130)/2.0, 150.0, 130.0, 130.0)];
     imageView2.image = [UIImage imageNamed:@"group_image2"];
+    imageView2.tag = SubViewTagGroup2;
     //    imageView.hidden = YES;
     self.group_image2 = imageView2;
     [self.view addSubview:imageView2];
 }
+
+- (void)addPZYView
+{
+    PZYView *view = [[PZYView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-130)/2.0, 150.0, 130.0, 130.0)];
+    view.backgroundColor = [UIColor grayColor];
+    view.tag = SubViewTagPZYView;
+    self.pzyView = view;
+    
+    [self.view addSubview:view];
+}
+
+//- (void)removeSubviewExclude:(SubViewTag)tag
+//{
+//    UIView *view = nil;
+//    for (int i = 0; i < 4; i++) {
+//        int subTag = 0>>i;
+//        if (tag != subTag) {
+//            view = [self.view viewWithTag:tag];
+//            [view removeFromSuperview];
+//        }
+//    }
+//}
 
 #pragma mark actions
 
@@ -137,6 +190,7 @@
 //    animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:0.3 :0 :0.9 :0.7];
     
     [self.imageView.layer.modelLayer addAnimation:animation forKey:@"Basic"];
+    
 }
 
 - (void)beginKeyFrameAnimation:(id)sender
@@ -149,6 +203,13 @@
     animation.additive = YES;
     
     [self.imageView.layer addAnimation:animation forKey:@"KeyFrame"];
+    
+    id action = [self.imageView actionForLayer:self.imageView.layer forKey:@"position"];
+    NSLog(@"hihi");
+    [UIView animateWithDuration:3.0 animations:^{
+        id action2 = [self.imageView actionForLayer:self.imageView.layer forKey:@"position"];
+        NSLog(@"haha");
+    }];;
 }
 
 - (void)beginGroupAnimation:(id)sender
@@ -239,6 +300,23 @@
     AnimateTypesViewController *animateTypesViewController = [[AnimateTypesViewController alloc] init];
     
     [self.navigationController pushViewController:animateTypesViewController animated:YES];
+}
+
+- (void)beginPZYViewButton:(id)sender
+{
+//    CABasicAnimation *animation = [CABasicAnimation animation];
+//    animation.keyPath = @"position.x";
+//    animation.fromValue = @80.0;
+//    animation.toValue = @200.0;
+//    animation.duration = 2.0;
+//    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+//    
+//    [self.pzyView.layer addAnimation:animation forKey:@"Basic"];
+    [UIView PZY_popAnimationWithDuration:5.0 animations:^{
+        
+        self.pzyView.transform = CGAffineTransformMakeRotation(M_PI_2);
+        
+    }];
 }
 
 @end
