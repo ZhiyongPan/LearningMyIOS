@@ -91,20 +91,20 @@
 {
     /*-------------------------------------CATransaction-----------------------------------*/
     
-    self.layer.frame = CGRectMake(300, 200, 100, 100);
-    id<CAAction> animation = [self.layer.delegate actionForLayer:self.layer forKey:@"position"];
+//    self.layer.frame = CGRectMake(300, 200, 100, 100);
     
-//    [CATransaction begin];
-//    [CATransaction setAnimationDuration:5.0];
-//    self.layer.bounds = CGRectMake(50, 50, 100, 100);
-//    [CATransaction setCompletionBlock:^{                   //动画结束后回调
-//        NSLog(@"animation completed");
-//    }];
-//    [CATransaction commit];
+    [CATransaction begin];
+    [CATransaction setAnimationDuration:5.0];
+    self.layer.frame = CGRectMake(300, 200, 100, 100);
+    [CATransaction setCompletionBlock:^{                   //动画结束后回调
+        NSLog(@"animation completed");
+    }];
+    [CATransaction commit];
     
     /*--------UIView与CALayer的bounds属性，具体见有道云笔记的《UIView与CALayer的相关属性》----------*/
 //    self.testView.bounds = CGRectMake(0, 0, 70, 70);
     
+    id<CAAction> animation = [self.layer.delegate actionForLayer:self.layer forKey:@"position"]; //返回nil就会执行隐式动画
     NSLog(@"haha");
 }
 
