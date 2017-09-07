@@ -203,13 +203,6 @@ typedef NS_ENUM(NSInteger, SubViewTag){
     animation.additive = YES;
     
     [self.imageView.layer addAnimation:animation forKey:@"KeyFrame"];
-    
-    id action = [self.imageView actionForLayer:self.imageView.layer forKey:@"position"];
-    NSLog(@"hihi");
-    [UIView animateWithDuration:3.0 animations:^{
-        id action2 = [self.imageView actionForLayer:self.imageView.layer forKey:@"position"];
-        NSLog(@"haha");
-    }];;
 }
 
 - (void)beginGroupAnimation:(id)sender
@@ -315,7 +308,7 @@ typedef NS_ENUM(NSInteger, SubViewTag){
     [UIView PZY_popAnimationWithDuration:5.0 animations:^{
         
         self.pzyView.transform = CGAffineTransformMakeRotation(M_PI_2);
-        
+        self.pzyView.frame = CGRectMake((SCREEN_WIDTH-130)/2.0 + 100, 150.0, 130.0, 130.0);
     }];
 }
 

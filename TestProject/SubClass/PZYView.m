@@ -19,11 +19,27 @@
 //{
 //    self = [super init];
 //    if (self) {
-//        PZYLayer *layer = [[PZYLayer alloc] init];
-//        layer.delegate = self;
-//        _pzyLayer = layer;
+//        
 //    }
 //    return self;
+//}
+//
+//- (CGPoint)center
+//{
+//    return [super center];
+//}
+//
+//- (void)setFrame:(CGRect)frame
+//{
+//    [super setFrame:frame];
+//}
+//- (void)setCenter:(CGPoint)center
+//{
+//    [super setCenter:center];
+//}
+//- (void)setBounds:(CGRect)bounds
+//{
+//    [super setBounds:bounds];
 //}
 
 #pragma mark 类方法
