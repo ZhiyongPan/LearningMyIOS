@@ -92,7 +92,7 @@
     /*-------------------------------------CATransaction-----------------------------------*/
     
 //    self.layer.frame = CGRectMake(300, 200, 100, 100);
-    
+    NSLog(@"animation begin");
     [CATransaction begin];
     [CATransaction setAnimationDuration:5.0];
     self.layer.frame = CGRectMake(300, 200, 100, 100);
@@ -100,6 +100,10 @@
         NSLog(@"animation completed");
     }];
     [CATransaction commit];
+    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        self.layer.speed = 0.5;
+//    });
     
     /*--------UIView与CALayer的bounds属性，具体见有道云笔记的《UIView与CALayer的相关属性》----------*/
 //    self.testView.bounds = CGRectMake(0, 0, 70, 70);
