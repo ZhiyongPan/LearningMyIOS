@@ -9,6 +9,8 @@
 #import "TestHomePageViewController.h"
 #import "CoreAnimationViewController.h"
 #import "PZYLayer.h"
+#import "TestAnimationTimeViewController.h"
+#import "BezierPathPracticeController.h"
 
 @interface TestHomePageViewController ()
 
@@ -31,6 +33,9 @@
     
     [self addTestLayer];
     [self addTestView];
+    
+    [self addTestAnimationTimeButton];
+    [self addTestBezierPathButton];
 }
 
 - (void)addStartButton
@@ -81,6 +86,30 @@
     [self.view addSubview:view];
 }
 
+- (void)addTestAnimationTimeButton
+{
+    UIButton *button = [[UIButton alloc] init];
+    button.frame = CGRectMake(20.0, 500.0, 150.0, 30.0);
+    [button setTitle:@"TestTime" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor greenColor];
+    [button addTarget:self action:@selector(testAnimationTimeButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+}
+
+- (void)addTestBezierPathButton
+{
+    UIButton *button = [[UIButton alloc] init];
+    button.frame = CGRectMake(200.0, 500.0, 200.0, 30.0);
+    [button setTitle:@"TestBezierPath" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    [button addTarget:self action:@selector(testBezierPathButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+}
+
 - (void)pushToAnimationViewController
 {
     CoreAnimationViewController *animationViewController = [[CoreAnimationViewController alloc] init];
@@ -110,6 +139,18 @@
     
     id<CAAction> animation = [self.layer.delegate actionForLayer:self.layer forKey:@"position"]; //返回nil就会执行隐式动画
     NSLog(@"haha");
+}
+
+- (void)testAnimationTimeButton:(id)sender
+{
+    TestAnimationTimeViewController *testAnimationTimeController = [[TestAnimationTimeViewController alloc] init];
+    [self.navigationController pushViewController:testAnimationTimeController animated:YES];
+}
+
+- (void)testBezierPathButton:(id)sender
+{
+    BezierPathPracticeController *testBezierPathController = [[BezierPathPracticeController alloc] init];
+    [self.navigationController pushViewController:testBezierPathController animated:YES];
 }
 
 @end

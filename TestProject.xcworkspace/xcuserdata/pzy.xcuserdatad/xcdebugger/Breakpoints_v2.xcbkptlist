@@ -138,7 +138,7 @@
                   moduleName = "TestProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pzy/Documents/Project/TestProject/TestProject/SubClass/PZYLayer.m"
-                  timestampString = "526569617.433943"
+                  timestampString = "527002353.995697"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -153,7 +153,7 @@
                   moduleName = "TestProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pzy/Documents/Project/TestProject/TestProject/SubClass/PZYLayer.m"
-                  timestampString = "526569617.43544"
+                  timestampString = "527002353.997043"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -192,22 +192,6 @@
             startingLineNumber = "160"
             endingLineNumber = "160"
             landmarkName = "-addPZYView"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestProject/TestViewController/HomePage/TestHomePageViewController.m"
-            timestampString = "526569580.189233"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "-testButtonClicked:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

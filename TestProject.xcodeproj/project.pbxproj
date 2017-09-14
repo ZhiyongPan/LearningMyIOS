@@ -13,6 +13,7 @@
 		4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */; };
 		4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */; };
 		4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */; };
+		4C7D5B171F68004D0040B8FD /* TestAnimationTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */; };
 		4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C85566C1F0D06B0000F8996 /* TestBlock.m */; };
 		4C8A91DB1F03CD6300D82F7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91DA1F03CD6300D82F7B /* main.m */; };
 		4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91DD1F03CD6300D82F7B /* AppDelegate.m */; };
@@ -26,6 +27,9 @@
 		4C97B9DC1F5D7FD100F5A03B /* PZYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97B9DB1F5D7FD100F5A03B /* PZYLayer.m */; };
 		4C97B9DF1F5D805100F5A03B /* PZYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97B9DE1F5D805100F5A03B /* PZYView.m */; };
 		4CC02D621F1E3CA000317418 /* SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC02D611F1E3CA000317418 /* SubArray.m */; };
+		4CD90B2E1F6AB6B200FB613E /* DragBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD90B2D1F6AB6B200FB613E /* DragBehavior.m */; };
+		4CD90B311F6AB6CD00FB613E /* TestDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD90B301F6AB6CD00FB613E /* TestDynamicController.m */; };
+		4CD90B341F6AB6DC00FB613E /* DragableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD90B331F6AB6DC00FB613E /* DragableController.m */; };
 		4CDBCBEF1F504A1A00B4ABB4 /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */; };
 		4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE11F551F2095B0003416B8 /* TestGCDViewController.m */; };
 		4CECA6231F56F01000960D95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CECA6201F56EBF600960D95 /* UIKit.framework */; };
@@ -39,6 +43,7 @@
 		4CF902D81F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF902D71F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m */; };
 		4CF902DB1F5ED23600B608A1 /* PZYSavedAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF902DA1F5ED23600B608A1 /* PZYSavedAnimationState.m */; };
 		4CF902DE1F5EDCF700B608A1 /* PZYUIViewAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF902DD1F5EDCF700B608A1 /* PZYUIViewAnimationState.m */; };
+		4CFA6F191F6967D700FBB6F0 /* BezierPathPracticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA6F181F6967D700FBB6F0 /* BezierPathPracticeController.m */; };
 		4CFD1EC61F0E617A00191EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */; };
 		4CFD1ECC1F0F4DC200191EA5 /* TestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */; };
 		4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */; };
@@ -77,6 +82,9 @@
 		4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayModel.m; sourceTree = "<group>"; };
 		4C5D1F691F29BB1D00BEAE77 /* TestDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDictionaryViewController.h; sourceTree = "<group>"; };
 		4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDictionaryViewController.m; sourceTree = "<group>"; };
+		4C7D5B151F68004D0040B8FD /* TestAnimationTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnimationTimeViewController.h; sourceTree = "<group>"; };
+		4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnimationTimeViewController.m; sourceTree = "<group>"; };
+		4C7D5B1D1F68150C0040B8FD /* CoreAnimationNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationNote.h; sourceTree = "<group>"; };
 		4C85566B1F0D06B0000F8996 /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
 		4C85566C1F0D06B0000F8996 /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		4C8A91D61F03CD6300D82F7B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +112,12 @@
 		4C97B9DE1F5D805100F5A03B /* PZYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYView.m; sourceTree = "<group>"; };
 		4CC02D601F1E3CA000317418 /* SubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubArray.h; sourceTree = "<group>"; };
 		4CC02D611F1E3CA000317418 /* SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubArray.m; sourceTree = "<group>"; };
+		4CD90B2C1F6AB6B200FB613E /* DragBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragBehavior.h; sourceTree = "<group>"; };
+		4CD90B2D1F6AB6B200FB613E /* DragBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragBehavior.m; sourceTree = "<group>"; };
+		4CD90B2F1F6AB6CD00FB613E /* TestDynamicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDynamicController.h; sourceTree = "<group>"; };
+		4CD90B301F6AB6CD00FB613E /* TestDynamicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicController.m; sourceTree = "<group>"; };
+		4CD90B321F6AB6DC00FB613E /* DragableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableController.h; sourceTree = "<group>"; };
+		4CD90B331F6AB6DC00FB613E /* DragableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableController.m; sourceTree = "<group>"; };
 		4CDBCBED1F504A1A00B4ABB4 /* CoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
 		4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
 		4CE11F541F2095B0003416B8 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
@@ -129,6 +143,8 @@
 		4CF902DA1F5ED23600B608A1 /* PZYSavedAnimationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYSavedAnimationState.m; sourceTree = "<group>"; };
 		4CF902DC1F5EDCF700B608A1 /* PZYUIViewAnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYUIViewAnimationState.h; sourceTree = "<group>"; };
 		4CF902DD1F5EDCF700B608A1 /* PZYUIViewAnimationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYUIViewAnimationState.m; sourceTree = "<group>"; };
+		4CFA6F171F6967D700FBB6F0 /* BezierPathPracticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathPracticeController.h; sourceTree = "<group>"; };
+		4CFA6F181F6967D700FBB6F0 /* BezierPathPracticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathPracticeController.m; sourceTree = "<group>"; };
 		4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CFD1ECA1F0F4DC200191EA5 /* TestAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnimationViewController.h; sourceTree = "<group>"; };
 		4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnimationViewController.m; sourceTree = "<group>"; };
@@ -217,6 +233,23 @@
 			path = NSDictionary;
 			sourceTree = "<group>";
 		};
+		4C7D5B141F6800290040B8FD /* CoreAnimationTime */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D5B151F68004D0040B8FD /* TestAnimationTimeViewController.h */,
+				4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */,
+			);
+			path = CoreAnimationTime;
+			sourceTree = "<group>";
+		};
+		4C7D5B1C1F6814FF0040B8FD /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				4C7D5B1D1F68150C0040B8FD /* CoreAnimationNote.h */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
 		4C85566A1F0D0697000F8996 /* TestBlock */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +284,7 @@
 		4C8A91D81F03CD6300D82F7B /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				4C7D5B1C1F6814FF0040B8FD /* Note */,
 				4CF902D51F5ECD4A00B608A1 /* UIViewCategory */,
 				4C97B9D91F5D7FBC00F5A03B /* SubClass */,
 				4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */,
@@ -329,6 +363,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		4CD90B2B1F6AB6B200FB613E /* UIKitDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				4CD90B2C1F6AB6B200FB613E /* DragBehavior.h */,
+				4CD90B2D1F6AB6B200FB613E /* DragBehavior.m */,
+				4CD90B2F1F6AB6CD00FB613E /* TestDynamicController.h */,
+				4CD90B301F6AB6CD00FB613E /* TestDynamicController.m */,
+				4CD90B321F6AB6DC00FB613E /* DragableController.h */,
+				4CD90B331F6AB6DC00FB613E /* DragableController.m */,
+			);
+			path = UIKitDynamic;
+			sourceTree = "<group>";
+		};
 		4CE11F531F20958D003416B8 /* TestGCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,6 +388,9 @@
 		4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */ = {
 			isa = PBXGroup;
 			children = (
+				4CD90B2B1F6AB6B200FB613E /* UIKitDynamic */,
+				4CFA6F161F6967C400FBB6F0 /* BezierPathPractice */,
+				4C7D5B141F6800290040B8FD /* CoreAnimationTime */,
 				4CF1E49C1F57E80C00C497DC /* VCTransitionPractice */,
 				4CDBCBED1F504A1A00B4ABB4 /* CoreAnimationViewController.h */,
 				4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */,
@@ -400,6 +450,15 @@
 				4CF902D71F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m */,
 			);
 			path = UIViewCategory;
+			sourceTree = "<group>";
+		};
+		4CFA6F161F6967C400FBB6F0 /* BezierPathPractice */ = {
+			isa = PBXGroup;
+			children = (
+				4CFA6F171F6967D700FBB6F0 /* BezierPathPracticeController.h */,
+				4CFA6F181F6967D700FBB6F0 /* BezierPathPracticeController.m */,
+			);
+			path = BezierPathPractice;
 			sourceTree = "<group>";
 		};
 		4CFD1EC11F0E59B300191EA5 /* TestAnimation */ = {
@@ -683,9 +742,13 @@
 				4CF902DB1F5ED23600B608A1 /* PZYSavedAnimationState.m in Sources */,
 				4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */,
 				4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */,
+				4CD90B2E1F6AB6B200FB613E /* DragBehavior.m in Sources */,
+				4C7D5B171F68004D0040B8FD /* TestAnimationTimeViewController.m in Sources */,
+				4CD90B311F6AB6CD00FB613E /* TestDynamicController.m in Sources */,
 				4CF902DE1F5EDCF700B608A1 /* PZYUIViewAnimationState.m in Sources */,
 				4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */,
 				4CF1E4AC1F57F10500C497DC /* TransitioningToViewController.m in Sources */,
+				4CD90B341F6AB6DC00FB613E /* DragableController.m in Sources */,
 				4CF902D81F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m in Sources */,
 				4CDBCBEF1F504A1A00B4ABB4 /* CoreAnimationViewController.m in Sources */,
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
@@ -693,6 +756,7 @@
 				4C97B9DC1F5D7FD100F5A03B /* PZYLayer.m in Sources */,
 				4CF1E4B51F57FE6500C497DC /* Animator.m in Sources */,
 				4C97B9DF1F5D805100F5A03B /* PZYView.m in Sources */,
+				4CFA6F191F6967D700FBB6F0 /* BezierPathPracticeController.m in Sources */,
 				4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */,
 				4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */,
 				4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */,
