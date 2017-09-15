@@ -34,9 +34,14 @@
 
 - (void)setup
 {
+    self.paneState = PaneStateClosed;
     self.dragableController = [[DragableController alloc] init];
     self.dragableController.view.layer.cornerRadius = 8.0;
+    self.dragableController.delegate = self;
+    [self addChildViewController:self.dragableController];
+    self.dragableController.view.frame = CGRectMake(0, SCREEN_HEIGHT * 0.5, SCREEN_WIDTH, SCREEN_HEIGHT*0.8);
     [self.view addSubview:self.dragableController.view];
+    [self.dragableController didMoveToParentViewController:self];
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
 }
 
@@ -53,8 +58,7 @@
 
 - (CGPoint)targetPoint
 {
-    CGSize size = self.view.bounds.size;
-    return CGPointMake(size.width/2, size.height/2 + 50);
+    return self.paneState == PaneStateClosed > 0 ? CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT * 1) : CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2 + 50);
 }
 
 #pragma mark DragableVCDelegate
@@ -66,7 +70,9 @@
 
 - (void)dragableVC:(DragableController *)dragableVC dragingEndedWithVelocity:(CGPoint)velocity
 {
-    
+    PaneState targetState = velocity.y >= 0 ? PaneStateClosed : PaneStateOpen;
+    self.paneState = targetState;
+    [self animateWithVelocity:velocity];
 }
 
 @end

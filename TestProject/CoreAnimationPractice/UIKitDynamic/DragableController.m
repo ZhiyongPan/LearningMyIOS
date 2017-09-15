@@ -20,6 +20,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor grayColor];
+    
+    [self setupDragableController];
 }
 
 - (void)setupDragableController
@@ -38,7 +40,9 @@
         velocity.x = 0;//为了不在x方向上移动
         if ([self.delegate respondsToSelector:@selector(dragableVC:dragingEndedWithVelocity:)]) {
             [self.delegate dragableVC:self dragingEndedWithVelocity:velocity];
-        } else if ([self.delegate respondsToSelector:@selector(dragableVCBeganDragging:)]) {
+        }
+    } else {
+        if ([self.delegate respondsToSelector:@selector(dragableVCBeganDragging:)]) {
             [self.delegate dragableVCBeganDragging:self];
         }
     }

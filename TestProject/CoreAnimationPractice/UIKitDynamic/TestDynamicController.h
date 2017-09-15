@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, PaneState) {
+    PaneStateOpen,
+    PaneStateClosed
+};
+
 @interface TestDynamicController : UIViewController
+
+@property (nonatomic, assign) PaneState paneState;
 
 @end

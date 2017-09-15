@@ -11,6 +11,7 @@
 #import "PZYLayer.h"
 #import "TestAnimationTimeViewController.h"
 #import "BezierPathPracticeController.h"
+#import "TestDynamicController.h"
 
 @interface TestHomePageViewController ()
 
@@ -36,6 +37,8 @@
     
     [self addTestAnimationTimeButton];
     [self addTestBezierPathButton];
+    
+    [self addTestUIKitDynamicButton];
 }
 
 - (void)addStartButton
@@ -110,6 +113,18 @@
     [self.view addSubview:button];
 }
 
+- (void)addTestUIKitDynamicButton
+{
+    UIButton *button = [[UIButton alloc] init];
+    button.frame = CGRectMake(20.0, 550.0, 150.0, 30.0);
+    [button setTitle:@"UIKitDynamic" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor yellowColor];
+    [button addTarget:self action:@selector(testUIKitDynamicButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+}
+
 - (void)pushToAnimationViewController
 {
     CoreAnimationViewController *animationViewController = [[CoreAnimationViewController alloc] init];
@@ -151,6 +166,12 @@
 {
     BezierPathPracticeController *testBezierPathController = [[BezierPathPracticeController alloc] init];
     [self.navigationController pushViewController:testBezierPathController animated:YES];
+}
+
+- (void)testUIKitDynamicButton:(id)sender
+{
+    TestDynamicController *dynamicController = [[TestDynamicController alloc] init];
+    [self.navigationController pushViewController:dynamicController animated:YES];
 }
 
 @end
