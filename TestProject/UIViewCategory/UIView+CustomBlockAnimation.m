@@ -95,13 +95,4 @@ static NSString *array = @"123";
     
     PZY_currentAnimationContext = nil;
 }
-
-//+ (NSMutableArray *)PZY_savedAnimationStates
-//{
-//    static NSMutableArray *mutableArray = nil;
-//    if (!mutableArray) {
-//        mutableArray = [[NSMutableArray alloc] init];
-//    }
-//    return mutableArray;
-//}
 @end

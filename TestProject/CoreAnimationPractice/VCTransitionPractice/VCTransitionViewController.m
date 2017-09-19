@@ -8,7 +8,7 @@
 
 #import "VCTransitionViewController.h"
 #import "VCAnimatedTransitioningViewController.h"
-
+#import "CommonParentViewController.h"
 
 
 @interface VCTransitionViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -45,10 +45,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (self.animteType == AnimateTypeVCAnimatedTransitioning) {
+    if (self.animateType == AnimateTypeVCAnimatedTransitioning) {
         VCAnimatedTransitioningViewController *vcAnimatedTransitioningViewController = [[VCAnimatedTransitioningViewController alloc] init];
         vcAnimatedTransitioningViewController.concreteTrasitionType = indexPath.row;
         [self.navigationController pushViewController:vcAnimatedTransitioningViewController animated:YES];
+    } else if (self.animateType == AnimateTypeTransionFromViewController) {
+        CommonParentViewController *commonVC = [[CommonParentViewController alloc] init];
+        [self.navigationController pushViewController:commonVC animated:YES];
     }
 }
 

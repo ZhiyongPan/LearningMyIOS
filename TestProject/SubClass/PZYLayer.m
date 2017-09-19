@@ -11,26 +11,6 @@
 
 @implementation PZYLayer
 
-//- (void)setFrame:(CGRect)frame
-//{
-//    [super setFrame:frame];
-//}
-//
-//- (void)setPosition:(CGPoint)position
-//{
-//    [super setPosition:position];
-//}
-//
-//- (void)setBounds:(CGRect)bounds
-//{
-//    [super setBounds:bounds];
-//}
-//
-//- (CGPoint)position
-//{
-//    return [super position];
-//}
-
 - (void)addAnimation:(CAAnimation *)anim forKey:(NSString *)key
 {
     anim.delegate = [PZYUIViewAnimationState animationStateWithBeginning:^{

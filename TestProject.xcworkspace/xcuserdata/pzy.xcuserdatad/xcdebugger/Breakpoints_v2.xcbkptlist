@@ -25,28 +25,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestProject/SubClass/PZYView.m"
-            timestampString = "526482482.731795"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "+layerClass"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "TestProject/SubClass/PZYLayer.m"
-            timestampString = "526482482.731795"
+            timestampString = "527434266.6448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "-addAnimation:forKey:"
             landmarkType = "7">
          </BreakpointContent>
@@ -118,27 +102,27 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestProject/SubClass/PZYLayer.m"
-            timestampString = "526482482.731795"
+            timestampString = "527434266.6448"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "-addAnimation:forKey:"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[PZYLayer addAnimation:forKey:]"
                   moduleName = "TestProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pzy/Documents/Project/TestProject/TestProject/SubClass/PZYLayer.m"
-                  timestampString = "527173276.615237"
+                  timestampString = "527432331.071189"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -146,14 +130,14 @@
                   offsetFromSymbolStart = "108">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__32-[PZYLayer addAnimation:forKey:]_block_invoke"
                   moduleName = "TestProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pzy/Documents/Project/TestProject/TestProject/SubClass/PZYLayer.m"
-                  timestampString = "527173276.616548"
+                  timestampString = "527432331.072589"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -169,14 +153,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestProject/SubClass/PZYView.m"
-            timestampString = "526482469.995706"
+            filePath = "TestProject/UIViewCategory/UIView+CustomBlockAnimation.m"
+            timestampString = "527434254.665565"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "@implementation PZYView"
-            landmarkType = "3">
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "+PZY_savedPopAnimationStates"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -185,13 +169,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TestProject/CoreAnimationPractice/CoreAnimationViewController.m"
-            timestampString = "526482699.513156"
+            filePath = "TestProject/UIViewCategory/UIView+CustomBlockAnimation.m"
+            timestampString = "527434340.741554"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "160"
-            endingLineNumber = "160"
-            landmarkName = "-addPZYView"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "+PZY_popAnimationWithDuration:animations:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

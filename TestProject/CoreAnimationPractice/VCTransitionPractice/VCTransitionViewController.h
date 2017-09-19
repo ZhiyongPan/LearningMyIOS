@@ -18,6 +18,6 @@ typedef NS_ENUM(NSInteger, AnimateType){
 
 @property (nonatomic, strong) NSArray *concreteAnimateTypes;
 
-@property (nonatomic, assign) AnimateType animteType;
+@property (nonatomic, assign) AnimateType animateType;
 
 @end

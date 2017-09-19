@@ -61,7 +61,7 @@
 {
     VCTransitionViewController *vcTransitionViewController = [[VCTransitionViewController alloc] init];
     vcTransitionViewController.concreteAnimateTypes = self.concreteAnimateTypes[indexPath.row];
-    vcTransitionViewController.animteType = indexPath.row;
+    vcTransitionViewController.animateType = indexPath.row;
     [self.navigationController pushViewController:vcTransitionViewController animated:YES];
 }
 
