@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0261C2CC211036142EC8B41C /* libPods-TestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5483161FD57631CB0F85107 /* libPods-TestProject.a */; };
+		4C026F161F7297140005FE22 /* CATransitionFromController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F0C1F7297140005FE22 /* CATransitionFromController.m */; };
+		4C026F171F7297140005FE22 /* CATransitionToController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F0E1F7297140005FE22 /* CATransitionToController.m */; };
+		4C026F181F7297140005FE22 /* CommonParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F111F7297140005FE22 /* CommonParentViewController.m */; };
+		4C026F191F7297140005FE22 /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F131F7297140005FE22 /* FromViewController.m */; };
+		4C026F1A1F7297140005FE22 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F151F7297140005FE22 /* ToViewController.m */; };
 		4C14795F1F0BAF0F00F5D187 /* TestSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14795E1F0BAF0F00F5D187 /* TestSet.m */; };
 		4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */; };
 		4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */; };
-		4C58AEFD1F714AB0000E60A2 /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C58AEFC1F714AB0000E60A2 /* FromViewController.m */; };
-		4C58AF001F714ACE000E60A2 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C58AEFF1F714ACE000E60A2 /* ToViewController.m */; };
-		4C58AF031F714EDE000E60A2 /* CommonParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C58AF021F714EDE000E60A2 /* CommonParentViewController.m */; };
 		4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */; };
 		4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */; };
 		4C7D5B171F68004D0040B8FD /* TestAnimationTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */; };
@@ -75,18 +77,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C026F0B1F7297140005FE22 /* CATransitionFromController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionFromController.h; sourceTree = "<group>"; };
+		4C026F0C1F7297140005FE22 /* CATransitionFromController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionFromController.m; sourceTree = "<group>"; };
+		4C026F0D1F7297140005FE22 /* CATransitionToController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionToController.h; sourceTree = "<group>"; };
+		4C026F0E1F7297140005FE22 /* CATransitionToController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionToController.m; sourceTree = "<group>"; };
+		4C026F101F7297140005FE22 /* CommonParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonParentViewController.h; sourceTree = "<group>"; };
+		4C026F111F7297140005FE22 /* CommonParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonParentViewController.m; sourceTree = "<group>"; };
+		4C026F121F7297140005FE22 /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromViewController.h; sourceTree = "<group>"; };
+		4C026F131F7297140005FE22 /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromViewController.m; sourceTree = "<group>"; };
+		4C026F141F7297140005FE22 /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToViewController.h; sourceTree = "<group>"; };
+		4C026F151F7297140005FE22 /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToViewController.m; sourceTree = "<group>"; };
 		4C14795D1F0BAF0F00F5D187 /* TestSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSet.h; sourceTree = "<group>"; };
 		4C14795E1F0BAF0F00F5D187 /* TestSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSet.m; sourceTree = "<group>"; };
 		4C1F8A381F0FAE87003875DD /* TestArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayViewController.h; sourceTree = "<group>"; };
 		4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayViewController.m; sourceTree = "<group>"; };
 		4C1F8A3E1F0FAEDD003875DD /* NSArray+testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+testArray.h"; sourceTree = "<group>"; };
 		4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+testArray.m"; sourceTree = "<group>"; };
-		4C58AEFB1F714AB0000E60A2 /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromViewController.h; sourceTree = "<group>"; };
-		4C58AEFC1F714AB0000E60A2 /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromViewController.m; sourceTree = "<group>"; };
-		4C58AEFE1F714ACE000E60A2 /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToViewController.h; sourceTree = "<group>"; };
-		4C58AEFF1F714ACE000E60A2 /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToViewController.m; sourceTree = "<group>"; };
-		4C58AF011F714EDE000E60A2 /* CommonParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonParentViewController.h; sourceTree = "<group>"; };
-		4C58AF021F714EDE000E60A2 /* CommonParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonParentViewController.m; sourceTree = "<group>"; };
 		4C5D1F651F29BA8800BEAE77 /* TestArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayModel.h; sourceTree = "<group>"; };
 		4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayModel.m; sourceTree = "<group>"; };
 		4C5D1F691F29BB1D00BEAE77 /* TestDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDictionaryViewController.h; sourceTree = "<group>"; };
@@ -202,6 +208,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C026F0A1F7297140005FE22 /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				4C026F0B1F7297140005FE22 /* CATransitionFromController.h */,
+				4C026F0C1F7297140005FE22 /* CATransitionFromController.m */,
+				4C026F0D1F7297140005FE22 /* CATransitionToController.h */,
+				4C026F0E1F7297140005FE22 /* CATransitionToController.m */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
+		4C026F0F1F7297140005FE22 /* transitionFromViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4C026F101F7297140005FE22 /* CommonParentViewController.h */,
+				4C026F111F7297140005FE22 /* CommonParentViewController.m */,
+				4C026F121F7297140005FE22 /* FromViewController.h */,
+				4C026F131F7297140005FE22 /* FromViewController.m */,
+				4C026F141F7297140005FE22 /* ToViewController.h */,
+				4C026F151F7297140005FE22 /* ToViewController.m */,
+			);
+			path = transitionFromViewController;
+			sourceTree = "<group>";
+		};
 		4C14795C1F0BAEFC00F5D187 /* TestSet */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,19 +252,6 @@
 				4CC02D611F1E3CA000317418 /* SubArray.m */,
 			);
 			path = NSArray;
-			sourceTree = "<group>";
-		};
-		4C58AEFA1F714A8E000E60A2 /* transitionFromViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4C58AEFB1F714AB0000E60A2 /* FromViewController.h */,
-				4C58AEFC1F714AB0000E60A2 /* FromViewController.m */,
-				4C58AEFE1F714ACE000E60A2 /* ToViewController.h */,
-				4C58AEFF1F714ACE000E60A2 /* ToViewController.m */,
-				4C58AF011F714EDE000E60A2 /* CommonParentViewController.h */,
-				4C58AF021F714EDE000E60A2 /* CommonParentViewController.m */,
-			);
-			path = transitionFromViewController;
 			sourceTree = "<group>";
 		};
 		4C5D1F641F29BA8800BEAE77 /* NSArrayModel */ = {
@@ -410,7 +427,6 @@
 		4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */ = {
 			isa = PBXGroup;
 			children = (
-				4C58AEFA1F714A8E000E60A2 /* transitionFromViewController */,
 				4CD90B2B1F6AB6B200FB613E /* UIKitDynamic */,
 				4CFA6F161F6967C400FBB6F0 /* BezierPathPractice */,
 				4C7D5B141F6800290040B8FD /* CoreAnimationTime */,
@@ -434,6 +450,8 @@
 		4CF1E49C1F57E80C00C497DC /* VCTransitionPractice */ = {
 			isa = PBXGroup;
 			children = (
+				4C026F0A1F7297140005FE22 /* CATransition */,
+				4C026F0F1F7297140005FE22 /* transitionFromViewController */,
 				4CF1E4A41F57E99A00C497DC /* AnimateTypesViewController.h */,
 				4CF1E4A51F57E99A00C497DC /* AnimateTypesViewController.m */,
 				4CF1E4A01F57E92800C497DC /* VCAnimatedTransitioning */,
@@ -750,6 +768,7 @@
 			files = (
 				4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */,
 				4CF1E4B61F57FE6500C497DC /* BubbleAnimator.m in Sources */,
+				4C026F161F7297140005FE22 /* CATransitionFromController.m in Sources */,
 				4C14795F1F0BAF0F00F5D187 /* TestSet.m in Sources */,
 				4CF1E4A61F57E99A00C497DC /* AnimateTypesViewController.m in Sources */,
 				4CF1E49F1F57E82300C497DC /* VCTransitionViewController.m in Sources */,
@@ -758,14 +777,13 @@
 				4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */,
 				4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */,
 				4CF1E4A91F57ECFB00C497DC /* VCAnimatedTransitioningViewController.m in Sources */,
+				4C026F1A1F7297140005FE22 /* ToViewController.m in Sources */,
 				4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */,
 				4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */,
 				4C8A920E1F03CDC700D82F7B /* FatherViewController.m in Sources */,
 				4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */,
-				4C58AEFD1F714AB0000E60A2 /* FromViewController.m in Sources */,
 				4CF902DB1F5ED23600B608A1 /* PZYSavedAnimationState.m in Sources */,
 				4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */,
-				4C58AF001F714ACE000E60A2 /* ToViewController.m in Sources */,
 				4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */,
 				4CD90B2E1F6AB6B200FB613E /* DragBehavior.m in Sources */,
 				4C7D5B171F68004D0040B8FD /* TestAnimationTimeViewController.m in Sources */,
@@ -781,13 +799,15 @@
 				4C97B9DC1F5D7FD100F5A03B /* PZYLayer.m in Sources */,
 				4CF1E4B51F57FE6500C497DC /* Animator.m in Sources */,
 				4C97B9DF1F5D805100F5A03B /* PZYView.m in Sources */,
-				4C58AF031F714EDE000E60A2 /* CommonParentViewController.m in Sources */,
 				4CFA6F191F6967D700FBB6F0 /* BezierPathPracticeController.m in Sources */,
+				4C026F181F7297140005FE22 /* CommonParentViewController.m in Sources */,
 				4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */,
 				4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */,
+				4C026F171F7297140005FE22 /* CATransitionToController.m in Sources */,
 				4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */,
 				4C8A91DB1F03CD6300D82F7B /* main.m in Sources */,
 				4CFD1ECC1F0F4DC200191EA5 /* TestAnimationViewController.m in Sources */,
+				4C026F191F7297140005FE22 /* FromViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

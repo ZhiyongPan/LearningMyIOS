@@ -52,7 +52,7 @@
 
 - (void)configConcreteAnimateTypes
 {
-    self.concreteAnimateTypes = @[@[@"present", @"transition"], @[@"Fade", @"Push", @"Cube"], @[@"Bubble", @"Drawer"]];
+    self.concreteAnimateTypes = @[@[@"present", @"transition"], @[@"Fade", @"MoveIn", @"Push", @"Reveal"], @[@"Bubble", @"Drawer"]];
 }
 
 #pragma mark UITableViewDelegate

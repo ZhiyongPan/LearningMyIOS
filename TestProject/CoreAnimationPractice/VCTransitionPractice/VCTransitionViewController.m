@@ -9,7 +9,7 @@
 #import "VCTransitionViewController.h"
 #import "VCAnimatedTransitioningViewController.h"
 #import "CommonParentViewController.h"
-
+#import "CATransitionFromController.h"
 
 @interface VCTransitionViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -52,6 +52,10 @@
     } else if (self.animateType == AnimateTypeTransionFromViewController) {
         CommonParentViewController *commonVC = [[CommonParentViewController alloc] init];
         [self.navigationController pushViewController:commonVC animated:YES];
+    } else if (self.animateType == AnimateTypeCATransition) {
+        CATransitionFromController *transitionFromVC = [[CATransitionFromController alloc] init];
+        transitionFromVC.transitionType = indexPath.row;
+        [self.navigationController pushViewController:transitionFromVC animated:YES];
     }
 }
 
