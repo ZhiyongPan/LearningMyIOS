@@ -7,6 +7,7 @@
 //
 
 #import "BezierPathPracticeController.h"
+#import "PZYUIViewAnimationState.h"
 
 @interface BezierPathPracticeController ()
 
@@ -84,6 +85,11 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         // 直接修改modelLayer的值来代替toValue
         self.shapeLayer.path = toPath.CGPath;
+        animation.delegate = [PZYUIViewAnimationState animationStateWithBeginning:nil completion:^(BOOL complete){
+            if (complete) {
+                self.shapeLayer.fillColor = [UIColor blueColor].CGColor;
+            }
+        }];
         [self.shapeLayer addAnimation:animation forKey:nil];
     });
 }
