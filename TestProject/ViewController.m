@@ -9,6 +9,9 @@
 #import "ViewController.h"
 #import "TestSet.h"
 
+
+
+
 @interface ViewController ()
 
 @end
@@ -26,7 +29,11 @@
     id object = set[1];
     [self printArray:array];
     NSLog(@"%@",array);
+    
+    
 }
+
+
 
 - (NSMutableArray *)setTestArray:(int)mod
 {

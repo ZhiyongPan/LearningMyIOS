@@ -26,6 +26,7 @@
     
     [self addCALayer];
     [self beginAnimation];
+    
 }
 
 - (void)addCALayer
