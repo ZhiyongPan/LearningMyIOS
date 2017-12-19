@@ -8,18 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0261C2CC211036142EC8B41C /* libPods-TestProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5483161FD57631CB0F85107 /* libPods-TestProject.a */; };
-		4C026F161F7297140005FE22 /* CATransitionFromController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F0C1F7297140005FE22 /* CATransitionFromController.m */; };
-		4C026F171F7297140005FE22 /* CATransitionToController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F0E1F7297140005FE22 /* CATransitionToController.m */; };
-		4C026F181F7297140005FE22 /* CommonParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F111F7297140005FE22 /* CommonParentViewController.m */; };
-		4C026F191F7297140005FE22 /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F131F7297140005FE22 /* FromViewController.m */; };
-		4C026F1A1F7297140005FE22 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C026F151F7297140005FE22 /* ToViewController.m */; };
-		4C14795F1F0BAF0F00F5D187 /* TestSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C14795E1F0BAF0F00F5D187 /* TestSet.m */; };
-		4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */; };
-		4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */; };
 		4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */; };
-		4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */; };
-		4C7D5B171F68004D0040B8FD /* TestAnimationTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */; };
-		4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C85566C1F0D06B0000F8996 /* TestBlock.m */; };
 		4C8A91DB1F03CD6300D82F7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91DA1F03CD6300D82F7B /* main.m */; };
 		4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91DD1F03CD6300D82F7B /* AppDelegate.m */; };
 		4C8A91E11F03CD6300D82F7B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91E01F03CD6300D82F7B /* ViewController.m */; };
@@ -29,34 +18,44 @@
 		4C8A91FF1F03CD6400D82F7B /* TestProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A91FE1F03CD6400D82F7B /* TestProjectUITests.m */; };
 		4C8A920E1F03CDC700D82F7B /* FatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A920D1F03CDC700D82F7B /* FatherViewController.m */; };
 		4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A92101F03CDDD00D82F7B /* SonViewController.m */; };
-		4C97B9DC1F5D7FD100F5A03B /* PZYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97B9DB1F5D7FD100F5A03B /* PZYLayer.m */; };
-		4C97B9DF1F5D805100F5A03B /* PZYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97B9DE1F5D805100F5A03B /* PZYView.m */; };
-		4CC02D621F1E3CA000317418 /* SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC02D611F1E3CA000317418 /* SubArray.m */; };
-		4CD90B2E1F6AB6B200FB613E /* DragBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD90B2D1F6AB6B200FB613E /* DragBehavior.m */; };
-		4CD90B311F6AB6CD00FB613E /* TestDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD90B301F6AB6CD00FB613E /* TestDynamicController.m */; };
-		4CD90B341F6AB6DC00FB613E /* DragableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD90B331F6AB6DC00FB613E /* DragableController.m */; };
-		4CDBCBEF1F504A1A00B4ABB4 /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */; };
-		4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE11F551F2095B0003416B8 /* TestGCDViewController.m */; };
 		4CECA6231F56F01000960D95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CECA6201F56EBF600960D95 /* UIKit.framework */; };
 		4CEDD7DE1F0531E8006835BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEDD7DD1F0531E8006835BF /* Foundation.framework */; };
-		4CF1E49F1F57E82300C497DC /* VCTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1E49E1F57E82300C497DC /* VCTransitionViewController.m */; };
-		4CF1E4A61F57E99A00C497DC /* AnimateTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1E4A51F57E99A00C497DC /* AnimateTypesViewController.m */; };
-		4CF1E4A91F57ECFB00C497DC /* VCAnimatedTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1E4A81F57ECFB00C497DC /* VCAnimatedTransitioningViewController.m */; };
-		4CF1E4AC1F57F10500C497DC /* TransitioningToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1E4AB1F57F10500C497DC /* TransitioningToViewController.m */; };
-		4CF1E4B51F57FE6500C497DC /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1E4B21F57FE6500C497DC /* Animator.m */; };
-		4CF1E4B61F57FE6500C497DC /* BubbleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF1E4B41F57FE6500C497DC /* BubbleAnimator.m */; };
-		4CF902D81F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF902D71F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m */; };
-		4CF902DB1F5ED23600B608A1 /* PZYSavedAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF902DA1F5ED23600B608A1 /* PZYSavedAnimationState.m */; };
-		4CF902DE1F5EDCF700B608A1 /* PZYUIViewAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF902DD1F5EDCF700B608A1 /* PZYUIViewAnimationState.m */; };
-		4CFA6F191F6967D700FBB6F0 /* BezierPathPracticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFA6F181F6967D700FBB6F0 /* BezierPathPracticeController.m */; };
 		4CFD1EC61F0E617A00191EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */; };
-		4CFD1ECC1F0F4DC200191EA5 /* TestAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */; };
 		4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */; };
 		4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */; };
 		4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */; };
 		4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */; };
 		4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */; };
+		6C13B2711FE93CD900CCCA64 /* SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B26D1FE93CD900CCCA64 /* SubArray.m */; };
+		6C13B2721FE93CD900CCCA64 /* TestArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B26E1FE93CD900CCCA64 /* TestArrayViewController.m */; };
+		6C13B2731FE93CD900CCCA64 /* NSArray+testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B26F1FE93CD900CCCA64 /* NSArray+testArray.m */; };
+		6C13B27A1FE93D2900CCCA64 /* TestDictionaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2761FE93D2900CCCA64 /* TestDictionaryViewController.m */; };
+		6C13B27B1FE93D2900CCCA64 /* TestSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2791FE93D2900CCCA64 /* TestSet.m */; };
+		6C13B2831FE93D9F00CCCA64 /* TestBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2821FE93D9F00CCCA64 /* TestBlock.m */; };
+		6C13B2C11FE93E6A00CCCA64 /* PZYLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2871FE93E6900CCCA64 /* PZYLayer.m */; };
+		6C13B2C21FE93E6A00CCCA64 /* PZYView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2891FE93E6900CCCA64 /* PZYView.m */; };
+		6C13B2C31FE93E6A00CCCA64 /* PZYUIViewAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B28A1FE93E6900CCCA64 /* PZYUIViewAnimationState.m */; };
+		6C13B2C41FE93E6A00CCCA64 /* PZYSavedAnimationState.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B28C1FE93E6900CCCA64 /* PZYSavedAnimationState.m */; };
+		6C13B2C51FE93E6A00CCCA64 /* DragBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2911FE93E6900CCCA64 /* DragBehavior.m */; };
+		6C13B2C61FE93E6A00CCCA64 /* TestDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2921FE93E6900CCCA64 /* TestDynamicController.m */; };
+		6C13B2C71FE93E6A00CCCA64 /* DragableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2931FE93E6900CCCA64 /* DragableController.m */; };
+		6C13B2C81FE93E6A00CCCA64 /* TestAnimationTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2991FE93E6900CCCA64 /* TestAnimationTimeViewController.m */; };
+		6C13B2C91FE93E6A00CCCA64 /* CoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B29A1FE93E6900CCCA64 /* CoreAnimationViewController.m */; };
+		6C13B2CA1FE93E6A00CCCA64 /* BezierPathPracticeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B29D1FE93E6900CCCA64 /* BezierPathPracticeController.m */; };
+		6C13B2CB1FE93E6A00CCCA64 /* VCTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B29F1FE93E6900CCCA64 /* VCTransitionViewController.m */; };
+		6C13B2CC1FE93E6A00CCCA64 /* TransitioningToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2A31FE93E6900CCCA64 /* TransitioningToViewController.m */; };
+		6C13B2CD1FE93E6A00CCCA64 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2A51FE93E6900CCCA64 /* Animator.m */; };
+		6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2A71FE93E6900CCCA64 /* BubbleAnimator.m */; };
+		6C13B2CF1FE93E6A00CCCA64 /* VCAnimatedTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2AA1FE93E6900CCCA64 /* VCAnimatedTransitioningViewController.m */; };
+		6C13B2D01FE93E6A00CCCA64 /* CATransitionToController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2AD1FE93E6900CCCA64 /* CATransitionToController.m */; };
+		6C13B2D11FE93E6A00CCCA64 /* CATransitionFromController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2AE1FE93E6900CCCA64 /* CATransitionFromController.m */; };
+		6C13B2D21FE93E6A00CCCA64 /* AnimateTypesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B11FE93E6900CCCA64 /* AnimateTypesViewController.m */; };
+		6C13B2D31FE93E6A00CCCA64 /* FromViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B61FE93E6900CCCA64 /* FromViewController.m */; };
+		6C13B2D41FE93E6A00CCCA64 /* CommonParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B71FE93E6900CCCA64 /* CommonParentViewController.m */; };
+		6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B81FE93E6900CCCA64 /* ToViewController.m */; };
+		6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */; };
+		6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,31 +76,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4C026F0B1F7297140005FE22 /* CATransitionFromController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionFromController.h; sourceTree = "<group>"; };
-		4C026F0C1F7297140005FE22 /* CATransitionFromController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionFromController.m; sourceTree = "<group>"; };
-		4C026F0D1F7297140005FE22 /* CATransitionToController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionToController.h; sourceTree = "<group>"; };
-		4C026F0E1F7297140005FE22 /* CATransitionToController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionToController.m; sourceTree = "<group>"; };
-		4C026F101F7297140005FE22 /* CommonParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonParentViewController.h; sourceTree = "<group>"; };
-		4C026F111F7297140005FE22 /* CommonParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonParentViewController.m; sourceTree = "<group>"; };
-		4C026F121F7297140005FE22 /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromViewController.h; sourceTree = "<group>"; };
-		4C026F131F7297140005FE22 /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromViewController.m; sourceTree = "<group>"; };
-		4C026F141F7297140005FE22 /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToViewController.h; sourceTree = "<group>"; };
-		4C026F151F7297140005FE22 /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToViewController.m; sourceTree = "<group>"; };
-		4C14795D1F0BAF0F00F5D187 /* TestSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSet.h; sourceTree = "<group>"; };
-		4C14795E1F0BAF0F00F5D187 /* TestSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSet.m; sourceTree = "<group>"; };
-		4C1F8A381F0FAE87003875DD /* TestArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayViewController.h; sourceTree = "<group>"; };
-		4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayViewController.m; sourceTree = "<group>"; };
-		4C1F8A3E1F0FAEDD003875DD /* NSArray+testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+testArray.h"; sourceTree = "<group>"; };
-		4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+testArray.m"; sourceTree = "<group>"; };
 		4C5D1F651F29BA8800BEAE77 /* TestArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayModel.h; sourceTree = "<group>"; };
 		4C5D1F661F29BA8800BEAE77 /* TestArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayModel.m; sourceTree = "<group>"; };
-		4C5D1F691F29BB1D00BEAE77 /* TestDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDictionaryViewController.h; sourceTree = "<group>"; };
-		4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDictionaryViewController.m; sourceTree = "<group>"; };
-		4C7D5B151F68004D0040B8FD /* TestAnimationTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnimationTimeViewController.h; sourceTree = "<group>"; };
-		4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnimationTimeViewController.m; sourceTree = "<group>"; };
 		4C7D5B1D1F68150C0040B8FD /* CoreAnimationNote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreAnimationNote.h; sourceTree = "<group>"; };
-		4C85566B1F0D06B0000F8996 /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
-		4C85566C1F0D06B0000F8996 /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
 		4C8A91D61F03CD6300D82F7B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8A91DA1F03CD6300D82F7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4C8A91DC1F03CD6300D82F7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -121,48 +98,10 @@
 		4C8A920D1F03CDC700D82F7B /* FatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatherViewController.m; sourceTree = "<group>"; };
 		4C8A920F1F03CDDD00D82F7B /* SonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SonViewController.h; sourceTree = "<group>"; };
 		4C8A92101F03CDDD00D82F7B /* SonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SonViewController.m; sourceTree = "<group>"; };
-		4C97B9DA1F5D7FD100F5A03B /* PZYLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYLayer.h; sourceTree = "<group>"; };
-		4C97B9DB1F5D7FD100F5A03B /* PZYLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYLayer.m; sourceTree = "<group>"; };
-		4C97B9DD1F5D805100F5A03B /* PZYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYView.h; sourceTree = "<group>"; };
-		4C97B9DE1F5D805100F5A03B /* PZYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYView.m; sourceTree = "<group>"; };
-		4CC02D601F1E3CA000317418 /* SubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubArray.h; sourceTree = "<group>"; };
-		4CC02D611F1E3CA000317418 /* SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubArray.m; sourceTree = "<group>"; };
-		4CD90B2C1F6AB6B200FB613E /* DragBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragBehavior.h; sourceTree = "<group>"; };
-		4CD90B2D1F6AB6B200FB613E /* DragBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragBehavior.m; sourceTree = "<group>"; };
-		4CD90B2F1F6AB6CD00FB613E /* TestDynamicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDynamicController.h; sourceTree = "<group>"; };
-		4CD90B301F6AB6CD00FB613E /* TestDynamicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicController.m; sourceTree = "<group>"; };
-		4CD90B321F6AB6DC00FB613E /* DragableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableController.h; sourceTree = "<group>"; };
-		4CD90B331F6AB6DC00FB613E /* DragableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableController.m; sourceTree = "<group>"; };
-		4CDBCBED1F504A1A00B4ABB4 /* CoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
-		4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
-		4CE11F541F2095B0003416B8 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
-		4CE11F551F2095B0003416B8 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
 		4CECA6201F56EBF600960D95 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4CECA6241F56F13000960D95 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		4CEDD7DD1F0531E8006835BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4CF1E49D1F57E82300C497DC /* VCTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitionViewController.h; sourceTree = "<group>"; };
-		4CF1E49E1F57E82300C497DC /* VCTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitionViewController.m; sourceTree = "<group>"; };
-		4CF1E4A41F57E99A00C497DC /* AnimateTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateTypesViewController.h; sourceTree = "<group>"; };
-		4CF1E4A51F57E99A00C497DC /* AnimateTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateTypesViewController.m; sourceTree = "<group>"; };
-		4CF1E4A71F57ECFB00C497DC /* VCAnimatedTransitioningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAnimatedTransitioningViewController.h; sourceTree = "<group>"; };
-		4CF1E4A81F57ECFB00C497DC /* VCAnimatedTransitioningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAnimatedTransitioningViewController.m; sourceTree = "<group>"; };
-		4CF1E4AA1F57F10500C497DC /* TransitioningToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitioningToViewController.h; sourceTree = "<group>"; };
-		4CF1E4AB1F57F10500C497DC /* TransitioningToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitioningToViewController.m; sourceTree = "<group>"; };
-		4CF1E4B11F57FE6500C497DC /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
-		4CF1E4B21F57FE6500C497DC /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
-		4CF1E4B31F57FE6500C497DC /* BubbleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleAnimator.h; sourceTree = "<group>"; };
-		4CF1E4B41F57FE6500C497DC /* BubbleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleAnimator.m; sourceTree = "<group>"; };
-		4CF902D61F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomBlockAnimation.h"; sourceTree = "<group>"; };
-		4CF902D71F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBlockAnimation.m"; sourceTree = "<group>"; };
-		4CF902D91F5ED23600B608A1 /* PZYSavedAnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYSavedAnimationState.h; sourceTree = "<group>"; };
-		4CF902DA1F5ED23600B608A1 /* PZYSavedAnimationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYSavedAnimationState.m; sourceTree = "<group>"; };
-		4CF902DC1F5EDCF700B608A1 /* PZYUIViewAnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYUIViewAnimationState.h; sourceTree = "<group>"; };
-		4CF902DD1F5EDCF700B608A1 /* PZYUIViewAnimationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYUIViewAnimationState.m; sourceTree = "<group>"; };
-		4CFA6F171F6967D700FBB6F0 /* BezierPathPracticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathPracticeController.h; sourceTree = "<group>"; };
-		4CFA6F181F6967D700FBB6F0 /* BezierPathPracticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathPracticeController.m; sourceTree = "<group>"; };
 		4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CFD1ECA1F0F4DC200191EA5 /* TestAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnimationViewController.h; sourceTree = "<group>"; };
-		4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnimationViewController.m; sourceTree = "<group>"; };
 		4CFD8BFB1F41C9DF005D3C18 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
 		4CFD8C041F41CE01005D3C18 /* TestDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDetailViewController.h; sourceTree = "<group>"; };
@@ -176,6 +115,64 @@
 		4CFD8C111F41D02B005D3C18 /* TestNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNavigationController.h; sourceTree = "<group>"; };
 		4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNavigationController.m; sourceTree = "<group>"; };
 		591F958A6193738359D04B06 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6C13B26B1FE93CD900CCCA64 /* NSArray+testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+testArray.h"; sourceTree = "<group>"; };
+		6C13B26C1FE93CD900CCCA64 /* TestArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayViewController.h; sourceTree = "<group>"; };
+		6C13B26D1FE93CD900CCCA64 /* SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubArray.m; sourceTree = "<group>"; };
+		6C13B26E1FE93CD900CCCA64 /* TestArrayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestArrayViewController.m; sourceTree = "<group>"; };
+		6C13B26F1FE93CD900CCCA64 /* NSArray+testArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+testArray.m"; sourceTree = "<group>"; };
+		6C13B2701FE93CD900CCCA64 /* SubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubArray.h; sourceTree = "<group>"; };
+		6C13B2751FE93D2900CCCA64 /* TestDictionaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDictionaryViewController.h; sourceTree = "<group>"; };
+		6C13B2761FE93D2900CCCA64 /* TestDictionaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDictionaryViewController.m; sourceTree = "<group>"; };
+		6C13B2781FE93D2900CCCA64 /* TestSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSet.h; sourceTree = "<group>"; };
+		6C13B2791FE93D2900CCCA64 /* TestSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSet.m; sourceTree = "<group>"; };
+		6C13B2811FE93D9F00CCCA64 /* TestBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBlock.h; sourceTree = "<group>"; };
+		6C13B2821FE93D9F00CCCA64 /* TestBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBlock.m; sourceTree = "<group>"; };
+		6C13B2861FE93E6900CCCA64 /* PZYSavedAnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYSavedAnimationState.h; sourceTree = "<group>"; };
+		6C13B2871FE93E6900CCCA64 /* PZYLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYLayer.m; sourceTree = "<group>"; };
+		6C13B2881FE93E6900CCCA64 /* PZYUIViewAnimationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYUIViewAnimationState.h; sourceTree = "<group>"; };
+		6C13B2891FE93E6900CCCA64 /* PZYView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYView.m; sourceTree = "<group>"; };
+		6C13B28A1FE93E6900CCCA64 /* PZYUIViewAnimationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYUIViewAnimationState.m; sourceTree = "<group>"; };
+		6C13B28B1FE93E6900CCCA64 /* PZYLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYLayer.h; sourceTree = "<group>"; };
+		6C13B28C1FE93E6900CCCA64 /* PZYSavedAnimationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PZYSavedAnimationState.m; sourceTree = "<group>"; };
+		6C13B28D1FE93E6900CCCA64 /* PZYView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PZYView.h; sourceTree = "<group>"; };
+		6C13B2901FE93E6900CCCA64 /* DragableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableController.h; sourceTree = "<group>"; };
+		6C13B2911FE93E6900CCCA64 /* DragBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragBehavior.m; sourceTree = "<group>"; };
+		6C13B2921FE93E6900CCCA64 /* TestDynamicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDynamicController.m; sourceTree = "<group>"; };
+		6C13B2931FE93E6900CCCA64 /* DragableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableController.m; sourceTree = "<group>"; };
+		6C13B2941FE93E6900CCCA64 /* DragBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragBehavior.h; sourceTree = "<group>"; };
+		6C13B2951FE93E6900CCCA64 /* TestDynamicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDynamicController.h; sourceTree = "<group>"; };
+		6C13B2961FE93E6900CCCA64 /* CoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreAnimationViewController.h; sourceTree = "<group>"; };
+		6C13B2981FE93E6900CCCA64 /* TestAnimationTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAnimationTimeViewController.h; sourceTree = "<group>"; };
+		6C13B2991FE93E6900CCCA64 /* TestAnimationTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAnimationTimeViewController.m; sourceTree = "<group>"; };
+		6C13B29A1FE93E6900CCCA64 /* CoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationViewController.m; sourceTree = "<group>"; };
+		6C13B29C1FE93E6900CCCA64 /* BezierPathPracticeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BezierPathPracticeController.h; sourceTree = "<group>"; };
+		6C13B29D1FE93E6900CCCA64 /* BezierPathPracticeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BezierPathPracticeController.m; sourceTree = "<group>"; };
+		6C13B29F1FE93E6900CCCA64 /* VCTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCTransitionViewController.m; sourceTree = "<group>"; };
+		6C13B2A01FE93E6900CCCA64 /* AnimateTypesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateTypesViewController.h; sourceTree = "<group>"; };
+		6C13B2A21FE93E6900CCCA64 /* VCAnimatedTransitioningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCAnimatedTransitioningViewController.h; sourceTree = "<group>"; };
+		6C13B2A31FE93E6900CCCA64 /* TransitioningToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitioningToViewController.m; sourceTree = "<group>"; };
+		6C13B2A51FE93E6900CCCA64 /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		6C13B2A61FE93E6900CCCA64 /* BubbleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleAnimator.h; sourceTree = "<group>"; };
+		6C13B2A71FE93E6900CCCA64 /* BubbleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleAnimator.m; sourceTree = "<group>"; };
+		6C13B2A81FE93E6900CCCA64 /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		6C13B2A91FE93E6900CCCA64 /* TransitioningToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitioningToViewController.h; sourceTree = "<group>"; };
+		6C13B2AA1FE93E6900CCCA64 /* VCAnimatedTransitioningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCAnimatedTransitioningViewController.m; sourceTree = "<group>"; };
+		6C13B2AB1FE93E6900CCCA64 /* VCTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCTransitionViewController.h; sourceTree = "<group>"; };
+		6C13B2AD1FE93E6900CCCA64 /* CATransitionToController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionToController.m; sourceTree = "<group>"; };
+		6C13B2AE1FE93E6900CCCA64 /* CATransitionFromController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATransitionFromController.m; sourceTree = "<group>"; };
+		6C13B2AF1FE93E6900CCCA64 /* CATransitionToController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionToController.h; sourceTree = "<group>"; };
+		6C13B2B01FE93E6900CCCA64 /* CATransitionFromController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATransitionFromController.h; sourceTree = "<group>"; };
+		6C13B2B11FE93E6900CCCA64 /* AnimateTypesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateTypesViewController.m; sourceTree = "<group>"; };
+		6C13B2B31FE93E6900CCCA64 /* CommonParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonParentViewController.h; sourceTree = "<group>"; };
+		6C13B2B41FE93E6900CCCA64 /* FromViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromViewController.h; sourceTree = "<group>"; };
+		6C13B2B51FE93E6900CCCA64 /* ToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToViewController.h; sourceTree = "<group>"; };
+		6C13B2B61FE93E6900CCCA64 /* FromViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromViewController.m; sourceTree = "<group>"; };
+		6C13B2B71FE93E6900CCCA64 /* CommonParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonParentViewController.m; sourceTree = "<group>"; };
+		6C13B2B81FE93E6900CCCA64 /* ToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToViewController.m; sourceTree = "<group>"; };
+		6C13B2BA1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomBlockAnimation.h"; sourceTree = "<group>"; };
+		6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBlockAnimation.m"; sourceTree = "<group>"; };
+		6C13B2BF1FE93E6A00CCCA64 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
+		6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
 		CC863B0392EC27519E1D1D6F /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		E5483161FD57631CB0F85107 /* libPods-TestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -208,52 +205,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C026F0A1F7297140005FE22 /* CATransition */ = {
-			isa = PBXGroup;
-			children = (
-				4C026F0B1F7297140005FE22 /* CATransitionFromController.h */,
-				4C026F0C1F7297140005FE22 /* CATransitionFromController.m */,
-				4C026F0D1F7297140005FE22 /* CATransitionToController.h */,
-				4C026F0E1F7297140005FE22 /* CATransitionToController.m */,
-			);
-			path = CATransition;
-			sourceTree = "<group>";
-		};
-		4C026F0F1F7297140005FE22 /* transitionFromViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4C026F101F7297140005FE22 /* CommonParentViewController.h */,
-				4C026F111F7297140005FE22 /* CommonParentViewController.m */,
-				4C026F121F7297140005FE22 /* FromViewController.h */,
-				4C026F131F7297140005FE22 /* FromViewController.m */,
-				4C026F141F7297140005FE22 /* ToViewController.h */,
-				4C026F151F7297140005FE22 /* ToViewController.m */,
-			);
-			path = transitionFromViewController;
-			sourceTree = "<group>";
-		};
-		4C14795C1F0BAEFC00F5D187 /* TestSet */ = {
-			isa = PBXGroup;
-			children = (
-				4C14795D1F0BAF0F00F5D187 /* TestSet.h */,
-				4C14795E1F0BAF0F00F5D187 /* TestSet.m */,
-			);
-			path = TestSet;
-			sourceTree = "<group>";
-		};
-		4C1F8A371F0FAD9F003875DD /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				4C1F8A381F0FAE87003875DD /* TestArrayViewController.h */,
-				4C1F8A391F0FAE87003875DD /* TestArrayViewController.m */,
-				4C1F8A3E1F0FAEDD003875DD /* NSArray+testArray.h */,
-				4C1F8A3F1F0FAEDD003875DD /* NSArray+testArray.m */,
-				4CC02D601F1E3CA000317418 /* SubArray.h */,
-				4CC02D611F1E3CA000317418 /* SubArray.m */,
-			);
-			path = NSArray;
-			sourceTree = "<group>";
-		};
 		4C5D1F641F29BA8800BEAE77 /* NSArrayModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,39 +214,12 @@
 			path = NSArrayModel;
 			sourceTree = "<group>";
 		};
-		4C5D1F681F29BAA800BEAE77 /* NSDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				4C5D1F691F29BB1D00BEAE77 /* TestDictionaryViewController.h */,
-				4C5D1F6A1F29BB1D00BEAE77 /* TestDictionaryViewController.m */,
-			);
-			path = NSDictionary;
-			sourceTree = "<group>";
-		};
-		4C7D5B141F6800290040B8FD /* CoreAnimationTime */ = {
-			isa = PBXGroup;
-			children = (
-				4C7D5B151F68004D0040B8FD /* TestAnimationTimeViewController.h */,
-				4C7D5B161F68004D0040B8FD /* TestAnimationTimeViewController.m */,
-			);
-			path = CoreAnimationTime;
-			sourceTree = "<group>";
-		};
 		4C7D5B1C1F6814FF0040B8FD /* Note */ = {
 			isa = PBXGroup;
 			children = (
 				4C7D5B1D1F68150C0040B8FD /* CoreAnimationNote.h */,
 			);
 			path = Note;
-			sourceTree = "<group>";
-		};
-		4C85566A1F0D0697000F8996 /* TestBlock */ = {
-			isa = PBXGroup;
-			children = (
-				4C85566B1F0D06B0000F8996 /* TestBlock.h */,
-				4C85566C1F0D06B0000F8996 /* TestBlock.m */,
-			);
-			name = TestBlock;
 			sourceTree = "<group>";
 		};
 		4C8A91CD1F03CD6300D82F7B = {
@@ -323,19 +247,14 @@
 		4C8A91D81F03CD6300D82F7B /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				6C13B2BC1FE93E6A00CCCA64 /* NetWork */,
+				6C13B2BD1FE93E6A00CCCA64 /* Thread */,
+				6C13B2841FE93E6900CCCA64 /* UIKit */,
+				6C13B2691FE93CC000CCCA64 /* Foundation */,
 				4C7D5B1C1F6814FF0040B8FD /* Note */,
-				4CF902D51F5ECD4A00B608A1 /* UIViewCategory */,
-				4C97B9D91F5D7FBC00F5A03B /* SubClass */,
-				4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */,
 				4CFD8BFA1F41C9C3005D3C18 /* TestViewController */,
-				4C5D1F681F29BAA800BEAE77 /* NSDictionary */,
 				4CAB58F11F27751500F0B227 /* Model */,
-				4CE11F531F20958D003416B8 /* TestGCD */,
-				4C1F8A371F0FAD9F003875DD /* NSArray */,
 				4CFD1EC41F0E617A00191EA5 /* Resources */,
-				4CFD1EC11F0E59B300191EA5 /* TestAnimation */,
-				4C85566A1F0D0697000F8996 /* TestBlock */,
-				4C14795C1F0BAEFC00F5D187 /* TestSet */,
 				4C8A91DC1F03CD6300D82F7B /* AppDelegate.h */,
 				4C8A91DD1F03CD6300D82F7B /* AppDelegate.m */,
 				4C8A91DF1F03CD6300D82F7B /* ViewController.h */,
@@ -379,62 +298,12 @@
 			path = TestProjectUITests;
 			sourceTree = "<group>";
 		};
-		4C97B9D91F5D7FBC00F5A03B /* SubClass */ = {
-			isa = PBXGroup;
-			children = (
-				4C97B9DA1F5D7FD100F5A03B /* PZYLayer.h */,
-				4C97B9DB1F5D7FD100F5A03B /* PZYLayer.m */,
-				4C97B9DD1F5D805100F5A03B /* PZYView.h */,
-				4C97B9DE1F5D805100F5A03B /* PZYView.m */,
-				4CF902D91F5ED23600B608A1 /* PZYSavedAnimationState.h */,
-				4CF902DA1F5ED23600B608A1 /* PZYSavedAnimationState.m */,
-				4CF902DC1F5EDCF700B608A1 /* PZYUIViewAnimationState.h */,
-				4CF902DD1F5EDCF700B608A1 /* PZYUIViewAnimationState.m */,
-			);
-			path = SubClass;
-			sourceTree = "<group>";
-		};
 		4CAB58F11F27751500F0B227 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				4C5D1F641F29BA8800BEAE77 /* NSArrayModel */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		4CD90B2B1F6AB6B200FB613E /* UIKitDynamic */ = {
-			isa = PBXGroup;
-			children = (
-				4CD90B2C1F6AB6B200FB613E /* DragBehavior.h */,
-				4CD90B2D1F6AB6B200FB613E /* DragBehavior.m */,
-				4CD90B2F1F6AB6CD00FB613E /* TestDynamicController.h */,
-				4CD90B301F6AB6CD00FB613E /* TestDynamicController.m */,
-				4CD90B321F6AB6DC00FB613E /* DragableController.h */,
-				4CD90B331F6AB6DC00FB613E /* DragableController.m */,
-			);
-			path = UIKitDynamic;
-			sourceTree = "<group>";
-		};
-		4CE11F531F20958D003416B8 /* TestGCD */ = {
-			isa = PBXGroup;
-			children = (
-				4CE11F541F2095B0003416B8 /* TestGCDViewController.h */,
-				4CE11F551F2095B0003416B8 /* TestGCDViewController.m */,
-			);
-			path = TestGCD;
-			sourceTree = "<group>";
-		};
-		4CE510411F4F0AAE00F20012 /* CoreAnimationPractice */ = {
-			isa = PBXGroup;
-			children = (
-				4CD90B2B1F6AB6B200FB613E /* UIKitDynamic */,
-				4CFA6F161F6967C400FBB6F0 /* BezierPathPractice */,
-				4C7D5B141F6800290040B8FD /* CoreAnimationTime */,
-				4CF1E49C1F57E80C00C497DC /* VCTransitionPractice */,
-				4CDBCBED1F504A1A00B4ABB4 /* CoreAnimationViewController.h */,
-				4CDBCBEE1F504A1A00B4ABB4 /* CoreAnimationViewController.m */,
-			);
-			path = CoreAnimationPractice;
 			sourceTree = "<group>";
 		};
 		4CEDD7DC1F0531E8006835BF /* Frameworks */ = {
@@ -445,70 +314,6 @@
 				E5483161FD57631CB0F85107 /* libPods-TestProject.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4CF1E49C1F57E80C00C497DC /* VCTransitionPractice */ = {
-			isa = PBXGroup;
-			children = (
-				4C026F0A1F7297140005FE22 /* CATransition */,
-				4C026F0F1F7297140005FE22 /* transitionFromViewController */,
-				4CF1E4A41F57E99A00C497DC /* AnimateTypesViewController.h */,
-				4CF1E4A51F57E99A00C497DC /* AnimateTypesViewController.m */,
-				4CF1E4A01F57E92800C497DC /* VCAnimatedTransitioning */,
-				4CF1E49D1F57E82300C497DC /* VCTransitionViewController.h */,
-				4CF1E49E1F57E82300C497DC /* VCTransitionViewController.m */,
-			);
-			path = VCTransitionPractice;
-			sourceTree = "<group>";
-		};
-		4CF1E4A01F57E92800C497DC /* VCAnimatedTransitioning */ = {
-			isa = PBXGroup;
-			children = (
-				4CF1E4B01F57FE6500C497DC /* Animator */,
-				4CF1E4A71F57ECFB00C497DC /* VCAnimatedTransitioningViewController.h */,
-				4CF1E4A81F57ECFB00C497DC /* VCAnimatedTransitioningViewController.m */,
-				4CF1E4AA1F57F10500C497DC /* TransitioningToViewController.h */,
-				4CF1E4AB1F57F10500C497DC /* TransitioningToViewController.m */,
-			);
-			path = VCAnimatedTransitioning;
-			sourceTree = "<group>";
-		};
-		4CF1E4B01F57FE6500C497DC /* Animator */ = {
-			isa = PBXGroup;
-			children = (
-				4CF1E4B11F57FE6500C497DC /* Animator.h */,
-				4CF1E4B21F57FE6500C497DC /* Animator.m */,
-				4CF1E4B31F57FE6500C497DC /* BubbleAnimator.h */,
-				4CF1E4B41F57FE6500C497DC /* BubbleAnimator.m */,
-			);
-			path = Animator;
-			sourceTree = "<group>";
-		};
-		4CF902D51F5ECD4A00B608A1 /* UIViewCategory */ = {
-			isa = PBXGroup;
-			children = (
-				4CF902D61F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.h */,
-				4CF902D71F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m */,
-			);
-			path = UIViewCategory;
-			sourceTree = "<group>";
-		};
-		4CFA6F161F6967C400FBB6F0 /* BezierPathPractice */ = {
-			isa = PBXGroup;
-			children = (
-				4CFA6F171F6967D700FBB6F0 /* BezierPathPracticeController.h */,
-				4CFA6F181F6967D700FBB6F0 /* BezierPathPracticeController.m */,
-			);
-			path = BezierPathPractice;
-			sourceTree = "<group>";
-		};
-		4CFD1EC11F0E59B300191EA5 /* TestAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				4CFD1ECA1F0F4DC200191EA5 /* TestAnimationViewController.h */,
-				4CFD1ECB1F0F4DC200191EA5 /* TestAnimationViewController.m */,
-			);
-			name = TestAnimation;
 			sourceTree = "<group>";
 		};
 		4CFD1EC41F0E617A00191EA5 /* Resources */ = {
@@ -568,6 +373,220 @@
 				4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		6C13B2691FE93CC000CCCA64 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2801FE93D9F00CCCA64 /* TestBlock */,
+				6C13B2741FE93D2900CCCA64 /* NSDictionary */,
+				6C13B2771FE93D2900CCCA64 /* TestSet */,
+				6C13B26A1FE93CD900CCCA64 /* NSArray */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		6C13B26A1FE93CD900CCCA64 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B26B1FE93CD900CCCA64 /* NSArray+testArray.h */,
+				6C13B26C1FE93CD900CCCA64 /* TestArrayViewController.h */,
+				6C13B26D1FE93CD900CCCA64 /* SubArray.m */,
+				6C13B26E1FE93CD900CCCA64 /* TestArrayViewController.m */,
+				6C13B26F1FE93CD900CCCA64 /* NSArray+testArray.m */,
+				6C13B2701FE93CD900CCCA64 /* SubArray.h */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		6C13B2741FE93D2900CCCA64 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2751FE93D2900CCCA64 /* TestDictionaryViewController.h */,
+				6C13B2761FE93D2900CCCA64 /* TestDictionaryViewController.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		6C13B2771FE93D2900CCCA64 /* TestSet */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2781FE93D2900CCCA64 /* TestSet.h */,
+				6C13B2791FE93D2900CCCA64 /* TestSet.m */,
+			);
+			path = TestSet;
+			sourceTree = "<group>";
+		};
+		6C13B2801FE93D9F00CCCA64 /* TestBlock */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2811FE93D9F00CCCA64 /* TestBlock.h */,
+				6C13B2821FE93D9F00CCCA64 /* TestBlock.m */,
+			);
+			path = TestBlock;
+			sourceTree = "<group>";
+		};
+		6C13B2841FE93E6900CCCA64 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2851FE93E6900CCCA64 /* SubClass */,
+				6C13B28E1FE93E6900CCCA64 /* CoreAnimationPractice */,
+				6C13B2B91FE93E6900CCCA64 /* UIViewCategory */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		6C13B2851FE93E6900CCCA64 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2861FE93E6900CCCA64 /* PZYSavedAnimationState.h */,
+				6C13B2871FE93E6900CCCA64 /* PZYLayer.m */,
+				6C13B2881FE93E6900CCCA64 /* PZYUIViewAnimationState.h */,
+				6C13B2891FE93E6900CCCA64 /* PZYView.m */,
+				6C13B28A1FE93E6900CCCA64 /* PZYUIViewAnimationState.m */,
+				6C13B28B1FE93E6900CCCA64 /* PZYLayer.h */,
+				6C13B28C1FE93E6900CCCA64 /* PZYSavedAnimationState.m */,
+				6C13B28D1FE93E6900CCCA64 /* PZYView.h */,
+			);
+			path = SubClass;
+			sourceTree = "<group>";
+		};
+		6C13B28E1FE93E6900CCCA64 /* CoreAnimationPractice */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B28F1FE93E6900CCCA64 /* UIKitDynamic */,
+				6C13B2961FE93E6900CCCA64 /* CoreAnimationViewController.h */,
+				6C13B2971FE93E6900CCCA64 /* CoreAnimationTime */,
+				6C13B29A1FE93E6900CCCA64 /* CoreAnimationViewController.m */,
+				6C13B29B1FE93E6900CCCA64 /* BezierPathPractice */,
+				6C13B29E1FE93E6900CCCA64 /* VCTransitionPractice */,
+			);
+			path = CoreAnimationPractice;
+			sourceTree = "<group>";
+		};
+		6C13B28F1FE93E6900CCCA64 /* UIKitDynamic */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2901FE93E6900CCCA64 /* DragableController.h */,
+				6C13B2911FE93E6900CCCA64 /* DragBehavior.m */,
+				6C13B2921FE93E6900CCCA64 /* TestDynamicController.m */,
+				6C13B2931FE93E6900CCCA64 /* DragableController.m */,
+				6C13B2941FE93E6900CCCA64 /* DragBehavior.h */,
+				6C13B2951FE93E6900CCCA64 /* TestDynamicController.h */,
+			);
+			path = UIKitDynamic;
+			sourceTree = "<group>";
+		};
+		6C13B2971FE93E6900CCCA64 /* CoreAnimationTime */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2981FE93E6900CCCA64 /* TestAnimationTimeViewController.h */,
+				6C13B2991FE93E6900CCCA64 /* TestAnimationTimeViewController.m */,
+			);
+			path = CoreAnimationTime;
+			sourceTree = "<group>";
+		};
+		6C13B29B1FE93E6900CCCA64 /* BezierPathPractice */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B29C1FE93E6900CCCA64 /* BezierPathPracticeController.h */,
+				6C13B29D1FE93E6900CCCA64 /* BezierPathPracticeController.m */,
+			);
+			path = BezierPathPractice;
+			sourceTree = "<group>";
+		};
+		6C13B29E1FE93E6900CCCA64 /* VCTransitionPractice */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B29F1FE93E6900CCCA64 /* VCTransitionViewController.m */,
+				6C13B2A01FE93E6900CCCA64 /* AnimateTypesViewController.h */,
+				6C13B2A11FE93E6900CCCA64 /* VCAnimatedTransitioning */,
+				6C13B2AB1FE93E6900CCCA64 /* VCTransitionViewController.h */,
+				6C13B2AC1FE93E6900CCCA64 /* CATransition */,
+				6C13B2B11FE93E6900CCCA64 /* AnimateTypesViewController.m */,
+				6C13B2B21FE93E6900CCCA64 /* transitionFromViewController */,
+			);
+			path = VCTransitionPractice;
+			sourceTree = "<group>";
+		};
+		6C13B2A11FE93E6900CCCA64 /* VCAnimatedTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2A21FE93E6900CCCA64 /* VCAnimatedTransitioningViewController.h */,
+				6C13B2A31FE93E6900CCCA64 /* TransitioningToViewController.m */,
+				6C13B2A41FE93E6900CCCA64 /* Animator */,
+				6C13B2A91FE93E6900CCCA64 /* TransitioningToViewController.h */,
+				6C13B2AA1FE93E6900CCCA64 /* VCAnimatedTransitioningViewController.m */,
+			);
+			path = VCAnimatedTransitioning;
+			sourceTree = "<group>";
+		};
+		6C13B2A41FE93E6900CCCA64 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2A51FE93E6900CCCA64 /* Animator.m */,
+				6C13B2A61FE93E6900CCCA64 /* BubbleAnimator.h */,
+				6C13B2A71FE93E6900CCCA64 /* BubbleAnimator.m */,
+				6C13B2A81FE93E6900CCCA64 /* Animator.h */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		6C13B2AC1FE93E6900CCCA64 /* CATransition */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2AD1FE93E6900CCCA64 /* CATransitionToController.m */,
+				6C13B2AE1FE93E6900CCCA64 /* CATransitionFromController.m */,
+				6C13B2AF1FE93E6900CCCA64 /* CATransitionToController.h */,
+				6C13B2B01FE93E6900CCCA64 /* CATransitionFromController.h */,
+			);
+			path = CATransition;
+			sourceTree = "<group>";
+		};
+		6C13B2B21FE93E6900CCCA64 /* transitionFromViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2B31FE93E6900CCCA64 /* CommonParentViewController.h */,
+				6C13B2B41FE93E6900CCCA64 /* FromViewController.h */,
+				6C13B2B51FE93E6900CCCA64 /* ToViewController.h */,
+				6C13B2B61FE93E6900CCCA64 /* FromViewController.m */,
+				6C13B2B71FE93E6900CCCA64 /* CommonParentViewController.m */,
+				6C13B2B81FE93E6900CCCA64 /* ToViewController.m */,
+			);
+			path = transitionFromViewController;
+			sourceTree = "<group>";
+		};
+		6C13B2B91FE93E6900CCCA64 /* UIViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2BA1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.h */,
+				6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */,
+			);
+			path = UIViewCategory;
+			sourceTree = "<group>";
+		};
+		6C13B2BC1FE93E6A00CCCA64 /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		6C13B2BD1FE93E6A00CCCA64 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2BE1FE93E6A00CCCA64 /* TestGCD */,
+			);
+			path = Thread;
+			sourceTree = "<group>";
+		};
+		6C13B2BE1FE93E6A00CCCA64 /* TestGCD */ = {
+			isa = PBXGroup;
+			children = (
+				6C13B2BF1FE93E6A00CCCA64 /* TestGCDViewController.h */,
+				6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */,
+			);
+			path = TestGCD;
 			sourceTree = "<group>";
 		};
 		6CF5ED5F770B3999C3168D8B /* Pods */ = {
@@ -767,47 +786,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */,
-				4CF1E4B61F57FE6500C497DC /* BubbleAnimator.m in Sources */,
-				4C026F161F7297140005FE22 /* CATransitionFromController.m in Sources */,
-				4C14795F1F0BAF0F00F5D187 /* TestSet.m in Sources */,
-				4CF1E4A61F57E99A00C497DC /* AnimateTypesViewController.m in Sources */,
-				4CF1E49F1F57E82300C497DC /* VCTransitionViewController.m in Sources */,
+				6C13B2D41FE93E6A00CCCA64 /* CommonParentViewController.m in Sources */,
+				6C13B2711FE93CD900CCCA64 /* SubArray.m in Sources */,
 				4C8A91E11F03CD6300D82F7B /* ViewController.m in Sources */,
-				4CC02D621F1E3CA000317418 /* SubArray.m in Sources */,
-				4C1F8A401F0FAEDD003875DD /* NSArray+testArray.m in Sources */,
 				4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */,
-				4CF1E4A91F57ECFB00C497DC /* VCAnimatedTransitioningViewController.m in Sources */,
-				4C026F1A1F7297140005FE22 /* ToViewController.m in Sources */,
+				6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */,
 				4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */,
+				6C13B2C51FE93E6A00CCCA64 /* DragBehavior.m in Sources */,
+				6C13B2731FE93CD900CCCA64 /* NSArray+testArray.m in Sources */,
+				6C13B2C91FE93E6A00CCCA64 /* CoreAnimationViewController.m in Sources */,
 				4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */,
+				6C13B2C81FE93E6A00CCCA64 /* TestAnimationTimeViewController.m in Sources */,
 				4C8A920E1F03CDC700D82F7B /* FatherViewController.m in Sources */,
+				6C13B2CF1FE93E6A00CCCA64 /* VCAnimatedTransitioningViewController.m in Sources */,
+				6C13B2C11FE93E6A00CCCA64 /* PZYLayer.m in Sources */,
 				4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */,
-				4CF902DB1F5ED23600B608A1 /* PZYSavedAnimationState.m in Sources */,
-				4C1F8A3A1F0FAE87003875DD /* TestArrayViewController.m in Sources */,
 				4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */,
-				4CD90B2E1F6AB6B200FB613E /* DragBehavior.m in Sources */,
-				4C7D5B171F68004D0040B8FD /* TestAnimationTimeViewController.m in Sources */,
-				4CD90B311F6AB6CD00FB613E /* TestDynamicController.m in Sources */,
-				4CF902DE1F5EDCF700B608A1 /* PZYUIViewAnimationState.m in Sources */,
-				4C5D1F6B1F29BB1D00BEAE77 /* TestDictionaryViewController.m in Sources */,
-				4CF1E4AC1F57F10500C497DC /* TransitioningToViewController.m in Sources */,
-				4CD90B341F6AB6DC00FB613E /* DragableController.m in Sources */,
-				4CF902D81F5ECD6C00B608A1 /* UIView+CustomBlockAnimation.m in Sources */,
-				4CDBCBEF1F504A1A00B4ABB4 /* CoreAnimationViewController.m in Sources */,
+				6C13B27B1FE93D2900CCCA64 /* TestSet.m in Sources */,
+				6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */,
+				6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */,
+				6C13B2D31FE93E6A00CCCA64 /* FromViewController.m in Sources */,
+				6C13B2CD1FE93E6A00CCCA64 /* Animator.m in Sources */,
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
 				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
-				4C97B9DC1F5D7FD100F5A03B /* PZYLayer.m in Sources */,
-				4CF1E4B51F57FE6500C497DC /* Animator.m in Sources */,
-				4C97B9DF1F5D805100F5A03B /* PZYView.m in Sources */,
-				4CFA6F191F6967D700FBB6F0 /* BezierPathPracticeController.m in Sources */,
-				4C026F181F7297140005FE22 /* CommonParentViewController.m in Sources */,
-				4CE11F561F2095B0003416B8 /* TestGCDViewController.m in Sources */,
+				6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */,
+				6C13B2C21FE93E6A00CCCA64 /* PZYView.m in Sources */,
+				6C13B2C31FE93E6A00CCCA64 /* PZYUIViewAnimationState.m in Sources */,
+				6C13B2831FE93D9F00CCCA64 /* TestBlock.m in Sources */,
+				6C13B27A1FE93D2900CCCA64 /* TestDictionaryViewController.m in Sources */,
+				6C13B2C61FE93E6A00CCCA64 /* TestDynamicController.m in Sources */,
+				6C13B2D01FE93E6A00CCCA64 /* CATransitionToController.m in Sources */,
+				6C13B2D21FE93E6A00CCCA64 /* AnimateTypesViewController.m in Sources */,
+				6C13B2CA1FE93E6A00CCCA64 /* BezierPathPracticeController.m in Sources */,
+				6C13B2CC1FE93E6A00CCCA64 /* TransitioningToViewController.m in Sources */,
 				4C8A92111F03CDDD00D82F7B /* SonViewController.m in Sources */,
-				4C026F171F7297140005FE22 /* CATransitionToController.m in Sources */,
-				4C85566D1F0D06B0000F8996 /* TestBlock.m in Sources */,
 				4C8A91DB1F03CD6300D82F7B /* main.m in Sources */,
-				4CFD1ECC1F0F4DC200191EA5 /* TestAnimationViewController.m in Sources */,
-				4C026F191F7297140005FE22 /* FromViewController.m in Sources */,
+				6C13B2D11FE93E6A00CCCA64 /* CATransitionFromController.m in Sources */,
+				6C13B2C41FE93E6A00CCCA64 /* PZYSavedAnimationState.m in Sources */,
+				6C13B2721FE93CD900CCCA64 /* TestArrayViewController.m in Sources */,
+				6C13B2CB1FE93E6A00CCCA64 /* VCTransitionViewController.m in Sources */,
+				6C13B2C71FE93E6A00CCCA64 /* DragableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -962,7 +980,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = AUWENTNQ26;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/pzy/Documents/Project/TestProject/TestProject/Prefix.pch;
+				GCC_PREFIX_HEADER = /Users/panzhiyong/Documents/iOSPractice/LearningMyIOS/TestProject/Prefix.pch;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = panzhiyong.TestProject;
@@ -977,7 +995,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AUWENTNQ26;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/pzy/Documents/Project/TestProject/TestProject/Prefix.pch;
+				GCC_PREFIX_HEADER = /Users/panzhiyong/Documents/iOSPractice/LearningMyIOS/TestProject/Prefix.pch;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = panzhiyong.TestProject;
