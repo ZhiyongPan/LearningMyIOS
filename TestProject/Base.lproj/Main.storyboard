@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8nA-0e-muD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8nA-0e-muD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="8nA-0e-muD" customClass="TestNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2K4-gu-jfB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="729" y="473"/>
         </scene>
-        <!--细节-->
+        <!--Foundation-->
         <scene sceneID="EWP-Q1-wX1">
             <objects>
-                <viewController title="细节" id="85Z-4h-VnZ" customClass="TestDetailViewController" sceneMemberID="viewController">
+                <viewController title="Foundation" id="85Z-4h-VnZ" customClass="TestFoundationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iM3-33-AwQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ueT-HC-VRi"/>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="N48-Xy-oVG"/>
+                    <tabBarItem key="tabBarItem" title="Foundation" id="N48-Xy-oVG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xH-AD-daI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

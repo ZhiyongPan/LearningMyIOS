@@ -143,12 +143,12 @@
     //3、makeObjectsPerformSelector
     //4、kvc集合运算符
     //5、enumerateObjectsUsingBlock
-    //6、enumerateUsingOptions(NSEnumerationConcurrent)
+    //6、enumerateObjectsWithOptions(NSEnumerationConcurrent)
     //7、display_apply
     
     //结论
     //1、在数组数量很少的时候，各种方法效率差不多(kvc耗时约是其他方法耗时的两倍，但是依然很少)
-    //2、在数组数量较多（以10万记）的时候差距就显示出来了，kvc非常慢，forin最少makeObjectsPerformSelector也比较少，enumerateObjectsUsingBlock、enumerateUsingOptions(NSEnumerationConcurrent)、display_apply差不多，约是forin和makeObjectsPerformSelector的十几倍，而for循环比这三个又要差上一些（约是他们的两倍）。要注意的是enumerateUsingOptions(NSEnumerationConcurrent)和display_apply是和CPU有关的，CPU核数越多效果越好。===数据：当数组数量10万的时候：
+    //2、在数组数量较多（以10万记）的时候差距就显示出来了，kvc非常慢，forin最少makeObjectsPerformSelector也比较少，enumerateObjectsUsingBlock、enumerateUsingOptions(NSEnumerationConcurrent)、display_apply差不多，约是forin和makeObjectsPerformSelector的十几倍，而for循环比这三个又要差上一些（约是他们的两倍）。要注意的是enumerateObjectsWithOptions(NSEnumerationConcurrent)和display_apply是和CPU有关的，CPU核数越多效果越好。===数据：当数组数量10万的时候：
     //------
            // 经典for循环 - 1.246721
            // for in (NSFastEnumeration) - 0.025955
@@ -174,7 +174,6 @@
     NSSet *set2 = [NSSet setWithArray:array2];
     BOOL ifContain = [set2 isSubsetOfSet:set];
     //因为NSSet底层是Hash表，所以查找快速，比较起来也就快一点
-    
     
     NSLog(@"hahahahha");
 }

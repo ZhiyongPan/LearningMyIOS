@@ -16,22 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self testTread];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)testTread
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        @autoreleasepool {
+            NSObject *obj = [[NSObject alloc] init];
+            NSObject *obj2 = [self getObj2];
+            NSLog(@"obj is %@, obj2 is %@", obj, obj2);
+//        }
+    });
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSObject *)getObj2
+{
+    NSObject *obj2 = [[NSObject alloc] init];
+    return obj2;
 }
-*/
 
 @end

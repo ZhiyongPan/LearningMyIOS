@@ -22,7 +22,7 @@
 		4CEDD7DE1F0531E8006835BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEDD7DD1F0531E8006835BF /* Foundation.framework */; };
 		4CFD1EC61F0E617A00191EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */; };
 		4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */; };
-		4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */; };
+		4CFD8C061F41CE01005D3C18 /* TestFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C051F41CE01005D3C18 /* TestFoundationViewController.m */; };
 		4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */; };
 		4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */; };
 		4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -56,6 +56,8 @@
 		6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B81FE93E6900CCCA64 /* ToViewController.m */; };
 		6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */; };
 		6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */; };
+		6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */; };
+		6C757CA6201B4705007C7EDA /* TestMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA5201B4705007C7EDA /* TestMemoryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,8 +106,8 @@
 		4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CFD8BFB1F41C9DF005D3C18 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
 		4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
-		4CFD8C041F41CE01005D3C18 /* TestDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDetailViewController.h; sourceTree = "<group>"; };
-		4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDetailViewController.m; sourceTree = "<group>"; };
+		4CFD8C041F41CE01005D3C18 /* TestFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFoundationViewController.h; sourceTree = "<group>"; };
+		4CFD8C051F41CE01005D3C18 /* TestFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFoundationViewController.m; sourceTree = "<group>"; };
 		4CFD8C071F41CE0E005D3C18 /* TestMyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMyInfoViewController.h; sourceTree = "<group>"; };
 		4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMyInfoViewController.m; sourceTree = "<group>"; };
 		4CFD8C0B1F41CE92005D3C18 /* TestHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHomePageViewController.h; sourceTree = "<group>"; };
@@ -173,6 +175,10 @@
 		6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBlockAnimation.m"; sourceTree = "<group>"; };
 		6C13B2BF1FE93E6A00CCCA64 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
 		6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
+		6C757CA1201B463E007C7EDA /* TestAutoreleasePoolObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAutoreleasePoolObject.h; sourceTree = "<group>"; };
+		6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoreleasePoolObject.m; sourceTree = "<group>"; };
+		6C757CA4201B4705007C7EDA /* TestMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMemoryController.h; sourceTree = "<group>"; };
+		6C757CA5201B4705007C7EDA /* TestMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMemoryController.m; sourceTree = "<group>"; };
 		CC863B0392EC27519E1D1D6F /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		E5483161FD57631CB0F85107 /* libPods-TestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -340,8 +346,8 @@
 		4CFD8BFE1F41CDD5005D3C18 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				4CFD8C041F41CE01005D3C18 /* TestDetailViewController.h */,
-				4CFD8C051F41CE01005D3C18 /* TestDetailViewController.m */,
+				4CFD8C041F41CE01005D3C18 /* TestFoundationViewController.h */,
+				4CFD8C051F41CE01005D3C18 /* TestFoundationViewController.m */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 		6C13B2691FE93CC000CCCA64 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				6C757C9F201B4605007C7EDA /* Memory */,
 				6C13B2801FE93D9F00CCCA64 /* TestBlock */,
 				6C13B2741FE93D2900CCCA64 /* NSDictionary */,
 				6C13B2771FE93D2900CCCA64 /* TestSet */,
@@ -589,6 +596,25 @@
 			path = TestGCD;
 			sourceTree = "<group>";
 		};
+		6C757C9F201B4605007C7EDA /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				6C757CA0201B461D007C7EDA /* AutoreleasePool */,
+				6C757CA4201B4705007C7EDA /* TestMemoryController.h */,
+				6C757CA5201B4705007C7EDA /* TestMemoryController.m */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		6C757CA0201B461D007C7EDA /* AutoreleasePool */ = {
+			isa = PBXGroup;
+			children = (
+				6C757CA1201B463E007C7EDA /* TestAutoreleasePoolObject.h */,
+				6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */,
+			);
+			path = AutoreleasePool;
+			sourceTree = "<group>";
+		};
 		6CF5ED5F770B3999C3168D8B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -794,6 +820,7 @@
 				4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */,
 				6C13B2C51FE93E6A00CCCA64 /* DragBehavior.m in Sources */,
 				6C13B2731FE93CD900CCCA64 /* NSArray+testArray.m in Sources */,
+				6C757CA6201B4705007C7EDA /* TestMemoryController.m in Sources */,
 				6C13B2C91FE93E6A00CCCA64 /* CoreAnimationViewController.m in Sources */,
 				4C8A91DE1F03CD6300D82F7B /* AppDelegate.m in Sources */,
 				6C13B2C81FE93E6A00CCCA64 /* TestAnimationTimeViewController.m in Sources */,
@@ -801,12 +828,13 @@
 				6C13B2CF1FE93E6A00CCCA64 /* VCAnimatedTransitioningViewController.m in Sources */,
 				6C13B2C11FE93E6A00CCCA64 /* PZYLayer.m in Sources */,
 				4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */,
-				4CFD8C061F41CE01005D3C18 /* TestDetailViewController.m in Sources */,
+				4CFD8C061F41CE01005D3C18 /* TestFoundationViewController.m in Sources */,
 				6C13B27B1FE93D2900CCCA64 /* TestSet.m in Sources */,
 				6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */,
 				6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */,
 				6C13B2D31FE93E6A00CCCA64 /* FromViewController.m in Sources */,
 				6C13B2CD1FE93E6A00CCCA64 /* Animator.m in Sources */,
+				6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */,
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
 				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
 				6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */,

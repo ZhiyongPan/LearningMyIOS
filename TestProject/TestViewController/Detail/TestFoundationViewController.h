@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TestDetailViewController : UIViewController
+@interface TestFoundationViewController : UIViewController
 
 @end
