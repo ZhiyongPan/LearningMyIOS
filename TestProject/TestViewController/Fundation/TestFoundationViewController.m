@@ -8,10 +8,7 @@
 
 #import "TestFoundationViewController.h"
 #import "TestMemoryController.h"
-
-#define RightButtonFrameY (SCREEN_WIDTH/3.0) * 2.0
-
-#define ButtonWidth SCREEN_WIDTH/3.0
+#import "TestRuntimeController.h"
 
 @interface TestFoundationViewController ()
 
@@ -23,6 +20,8 @@
     [super viewDidLoad];
     
     [self addMemoryButton];
+    
+    [self addRuntimeButton];
 }
 
 - (void)addMemoryButton
@@ -38,6 +37,22 @@
 - (void)gotoMemoryController
 {
     TestMemoryController *controller = [[TestMemoryController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)addRuntimeButton
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"Runtime" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(RightButtonFrameX, 100, ButtonWidth, 30.0);
+    [button addTarget:self action:@selector(gotoRuntimeController) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)gotoRuntimeController
+{
+    TestRuntimeController *controller = [[TestRuntimeController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

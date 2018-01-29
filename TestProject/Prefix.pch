@@ -21,3 +21,8 @@
 #define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
 #define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
 #define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+
+#define RightButtonFrameX (SCREEN_WIDTH/3.0) * 2.0
+
+#define ButtonWidth SCREEN_WIDTH/3.0

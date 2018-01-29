@@ -56,6 +56,9 @@
 		6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B81FE93E6900CCCA64 /* ToViewController.m */; };
 		6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */; };
 		6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */; };
+		6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EB201F47CF00838008 /* TestRuntimeController.m */; };
+		6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */; };
+		6C42E6F3201F65C000838008 /* PZYObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6F2201F65C000838008 /* PZYObserverInfo.m */; };
 		6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */; };
 		6C757CA6201B4705007C7EDA /* TestMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA5201B4705007C7EDA /* TestMemoryController.m */; };
 /* End PBXBuildFile section */
@@ -175,6 +178,12 @@
 		6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBlockAnimation.m"; sourceTree = "<group>"; };
 		6C13B2BF1FE93E6A00CCCA64 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
 		6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
+		6C42E6EA201F47CF00838008 /* TestRuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeController.h; sourceTree = "<group>"; };
+		6C42E6EB201F47CF00838008 /* TestRuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeController.m; sourceTree = "<group>"; };
+		6C42E6EE201F4ACC00838008 /* NSObject+PZYKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PZYKVO.h"; sourceTree = "<group>"; };
+		6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PZYKVO.m"; sourceTree = "<group>"; };
+		6C42E6F1201F65C000838008 /* PZYObserverInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZYObserverInfo.h; sourceTree = "<group>"; };
+		6C42E6F2201F65C000838008 /* PZYObserverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZYObserverInfo.m; sourceTree = "<group>"; };
 		6C757CA1201B463E007C7EDA /* TestAutoreleasePoolObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAutoreleasePoolObject.h; sourceTree = "<group>"; };
 		6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoreleasePoolObject.m; sourceTree = "<group>"; };
 		6C757CA4201B4705007C7EDA /* TestMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMemoryController.h; sourceTree = "<group>"; };
@@ -253,6 +262,7 @@
 		4C8A91D81F03CD6300D82F7B /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				6C42E6E9201F47BD00838008 /* Runtime */,
 				6C13B2BC1FE93E6A00CCCA64 /* NetWork */,
 				6C13B2BD1FE93E6A00CCCA64 /* Thread */,
 				6C13B2841FE93E6900CCCA64 /* UIKit */,
@@ -334,7 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				4CFD8C0A1F41CE85005D3C18 /* HomePage */,
-				4CFD8BFE1F41CDD5005D3C18 /* Detail */,
+				4CFD8BFE1F41CDD5005D3C18 /* Fundation */,
 				4CFD8BFF1F41CDD5005D3C18 /* Main */,
 				4CFD8C001F41CDD5005D3C18 /* MyInfo */,
 				4CFD8BFB1F41C9DF005D3C18 /* Mediator.h */,
@@ -343,13 +353,13 @@
 			path = TestViewController;
 			sourceTree = "<group>";
 		};
-		4CFD8BFE1F41CDD5005D3C18 /* Detail */ = {
+		4CFD8BFE1F41CDD5005D3C18 /* Fundation */ = {
 			isa = PBXGroup;
 			children = (
 				4CFD8C041F41CE01005D3C18 /* TestFoundationViewController.h */,
 				4CFD8C051F41CE01005D3C18 /* TestFoundationViewController.m */,
 			);
-			path = Detail;
+			path = Fundation;
 			sourceTree = "<group>";
 		};
 		4CFD8BFF1F41CDD5005D3C18 /* Main */ = {
@@ -596,6 +606,27 @@
 			path = TestGCD;
 			sourceTree = "<group>";
 		};
+		6C42E6E9201F47BD00838008 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				6C42E6ED201F4A7500838008 /* Category */,
+				6C42E6EA201F47CF00838008 /* TestRuntimeController.h */,
+				6C42E6EB201F47CF00838008 /* TestRuntimeController.m */,
+				6C42E6F1201F65C000838008 /* PZYObserverInfo.h */,
+				6C42E6F2201F65C000838008 /* PZYObserverInfo.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		6C42E6ED201F4A7500838008 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6C42E6EE201F4ACC00838008 /* NSObject+PZYKVO.h */,
+				6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		6C757C9F201B4605007C7EDA /* Memory */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,10 +863,12 @@
 				6C13B27B1FE93D2900CCCA64 /* TestSet.m in Sources */,
 				6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */,
 				6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */,
+				6C42E6F3201F65C000838008 /* PZYObserverInfo.m in Sources */,
 				6C13B2D31FE93E6A00CCCA64 /* FromViewController.m in Sources */,
 				6C13B2CD1FE93E6A00CCCA64 /* Animator.m in Sources */,
 				6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */,
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
+				6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */,
 				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
 				6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */,
 				6C13B2C21FE93E6A00CCCA64 /* PZYView.m in Sources */,
@@ -853,6 +886,7 @@
 				6C13B2C41FE93E6A00CCCA64 /* PZYSavedAnimationState.m in Sources */,
 				6C13B2721FE93CD900CCCA64 /* TestArrayViewController.m in Sources */,
 				6C13B2CB1FE93E6A00CCCA64 /* VCTransitionViewController.m in Sources */,
+				6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */,
 				6C13B2C71FE93E6A00CCCA64 /* DragableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
