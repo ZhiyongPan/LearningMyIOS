@@ -8,6 +8,7 @@
 
 #import "TestRuntimeController.h"
 #import "NSObject+PZYKVO.h"
+#import "TestVariableParameterObject.h"
 
 @interface TestKVOInfo : NSObject
 
@@ -35,6 +36,7 @@
     self.info = [[TestKVOInfo alloc] init];
     self.info.name = @"oldName";
     [self addTestKVOButton];
+    [self addTestVariableParametersButton];
 }
 
 - (void)addTestKVOButton
@@ -53,6 +55,22 @@
         NSLog(@"testKVO oldValue is %@, newValue is %@",oldValue, newValue);
     }];
     self.info.name = @"newName";
+}
+
+- (void)addTestVariableParametersButton
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"VariableParameters" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(RightButtonFrameX, 100, ButtonWidth, 30.0);
+    [button addTarget:self action:@selector(testVariableParameters) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)testVariableParameters
+{
+    TestVariableParameterObject *obj = [TestVariableParameterObject objectWithParas:@"zhiyong", @"pan", @"guangzhou", nil];
+    NSLog(@"VariableParameters obj is %@",obj);
 }
 
 @end

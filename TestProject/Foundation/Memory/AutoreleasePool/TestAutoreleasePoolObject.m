@@ -26,7 +26,7 @@
 {
     TestAutoreleasePoolObject *obj = [TestAutoreleasePoolObject new];
     obj.name = name;
-    obj.image = [UIImage imageNamed:@"test_image_1"];
+//    obj.image = [UIImage imageNamed:@"test_image_1"];
     return obj;
 }
 

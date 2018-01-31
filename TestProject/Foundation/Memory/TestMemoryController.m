@@ -36,7 +36,17 @@
 - (void)testAutoreleasePool
 {
     
+    TestAutoreleasePoolObject *object = [TestAutoreleasePoolObject testAutoreleasePoolObjectWithName:@"object1"];
     
+    @autoreleasepool {
+        
+//        TestAutoreleasePoolObject *object2 = [TestAutoreleasePoolObject testAutoreleasePoolObjectWithName:@"object2"];
+//        NSLog(@"object2 is %@", object2);
+        
+        [self printTestObject];
+    }
+    
+    return;
 //    [self testMuchObjInMainThread];
 //    return;
     

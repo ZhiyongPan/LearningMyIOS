@@ -11,147 +11,133 @@
 #import <objc/message.h>
 #import "PZYObserverInfo.h"
 
-NSString * const PZYKVOClassPrefix = @"PZY_KVOClass_";
-NSString *const PZYKVOAssociatedObservers = @"PZYKVOAssociatedObservers";
+
+NSString * const PZYKVOClassPrefix = @"PZYKVOClassPrefix_";
+NSString * const PZYObserversKey = @"PZYObserversKey";
 
 @implementation NSObject (PZYKVO)
 
-- (void)test
+static NSString * setterForGetter(NSString *getter)
 {
-    __unused NSObject *obj = [[NSObject alloc] init];
-}
-
-static NSString * kvoSetter(NSString *key)
-{
-    if (!key.length) {
-        return nil;
-    }
-    NSString *firstCharacter = [[key substringToIndex:1] uppercaseString];
-    NSString *remainCharacters = [key substringFromIndex:1];
-    
-    return [NSString stringWithFormat:@"set%@%@:", firstCharacter, remainCharacters];
-}
-
-static NSString * kvoGetter(NSString *setter)
-{
-    if (setter.length <=0 || ![setter hasPrefix:@"set"] || ![setter hasSuffix:@":"]) {
+    if (getter.length <= 0) {
         return nil;
     }
     
-    // remove 'set' at the begining and ':' at the end
+    // upper case the first letter
+    NSString *firstLetter = [[getter substringToIndex:1] uppercaseString];
+    NSString *remainingLetters = [getter substringFromIndex:1];
+    
+    // add 'set' at the begining and ':' at the end
+    NSString *setter = [NSString stringWithFormat:@"set%@%@:", firstLetter, remainingLetters];
+    
+    return setter;
+}
+
+static NSString *getterForSetter(NSString *setter)
+{
     NSRange range = NSMakeRange(3, setter.length - 4);
-    NSString *key = [setter substringWithRange:range];
-    
+    NSString *getter = [setter substringWithRange:range];
+
     // lower case the first letter
-    NSString *firstLetter = [[key substringToIndex:1] lowercaseString];
-    key = [key stringByReplacingCharactersInRange:NSMakeRange(0, 1)
+    NSString *firstLetter = [[getter substringToIndex:1] lowercaseString];
+    getter = [getter stringByReplacingCharactersInRange:NSMakeRange(0, 1)
                                        withString:firstLetter];
-    
-    return key;
+
+    return getter;
 }
 
-- (BOOL)hasSelector:(SEL)selector
+static void pzy_setter(id self, SEL _cmd, id newValue)
 {
-    Class clazz = object_getClass(self);
-    unsigned int methodCount = 0;
-    Method * methodList = class_copyMethodList(clazz, &methodCount);
-    for (int i = 0; i < methodCount; i++) {
-        Method method = methodList[i];
-        SEL methodSelctor = method_getName(method);
-        if (methodSelctor == selector) {
-            free(methodList);
-            return YES;
-        }
-    }
+    //先拿到旧值
+    NSString *setter = NSStringFromSelector(_cmd);
+    NSString *getter = getterForSetter(setter);
+    id oldValue = [self valueForKey:getter];
     
-    free(methodList);
-    return NO;
-}
-
-- (void)PZY_addObserver:(NSObject *)object forKeyPath:(NSString *)keyPath withBlock:(PZYObserverBlock)block
-{
-    [self checkClassWithKeyPath:keyPath];
-    
-    //TODO addObserver
-    PZYObserverInfo *info = [[PZYObserverInfo alloc] initWithObserver:object keyPath:keyPath block:block];
-    NSMutableArray *observers = objc_getAssociatedObject(self, (__bridge const void *)(PZYKVOAssociatedObservers));
-    if (!observers) {
-        observers = [NSMutableArray array];
-        objc_setAssociatedObject(self, (__bridge const void *)(PZYKVOAssociatedObservers), observers, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
-    [observers addObject:info];
-}
-
-- (void)checkClassWithKeyPath:(NSString *)keyPath
-{
-    Class clazz = object_getClass(self);
-    NSString *clazzName = NSStringFromClass(clazz);
-    if (![clazzName hasPrefix:PZYKVOClassPrefix]) {
-        clazz = [self createKVOClassForOriginalClassName:clazzName];
-        object_setClass(self, clazz);
-    }
-    
-    SEL kvoSetterSelctor = NSSelectorFromString(kvoSetter(keyPath));
-    if (![self hasSelector:kvoSetterSelctor]) {
-        Method setterMethod = class_getInstanceMethod(clazz, kvoSetterSelctor);
-        const char *types = method_getTypeEncoding(setterMethod);
-        class_addMethod(clazz, kvoSetterSelctor, (IMP)kvo_setter, types);
-    }
-}
-
-static void kvo_setter(id self, SEL _cmd, id newValue)
-{
-    NSString *setterName = NSStringFromSelector(_cmd);
-    NSString *getterName = kvoGetter(setterName);
-    
-    id oldValue = [self valueForKey:getterName];
-    
+    //然后调用super的setter
     struct objc_super superClazz = {
         .receiver = self,
         .super_class = class_getSuperclass(object_getClass(self))
     };
-    
-    void(*objc_methodCast)(void * , SEL , id) = (void *)objc_msgSendSuper;
-    objc_methodCast(&superClazz, _cmd, newValue);
-    
-    NSMutableArray *observers = objc_getAssociatedObject(self, (__bridge const void *)(PZYKVOAssociatedObservers));
+    void (*objc_msgSuperSend_cast)(void *, SEL, id) = (void *)objc_msgSendSuper;
+    objc_msgSuperSend_cast(&superClazz, _cmd, newValue);
+
+    //然后判断有没有observer，调用Block
+    NSMutableArray *observers = objc_getAssociatedObject(self, (__bridge const void *)(PZYObserversKey));
     for (PZYObserverInfo *info in observers) {
-        if ([info.key isEqualToString:getterName]) {
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                
-                info.block(self, info.key, oldValue, newValue);
-            });
+        if ([info.key isEqualToString:getter]) {
+            info.block(self, info.key, oldValue, newValue);
+            break;
         }
     }
 }
 
-- (void)PZY_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath
+- (void)PZY_addObserver:(id)observer forKeyPath:(NSString *)keyPath withBlock:(PZYObserverBlock)block
 {
+    NSString *setter = setterForGetter(keyPath);
+    SEL setterSelector = NSSelectorFromString(setter);
+    Method setterMethod = class_getInstanceMethod([self class], setterSelector);
     
-}
-
-static Class pzyKVOClass(id self, SEL _cmd)
-{
-    return class_getSuperclass(self);
-}
-
-- (Class)createKVOClassForOriginalClassName:(NSString *)originClazzName
-{
-    NSString *kvoClazzName = [PZYKVOClassPrefix stringByAppendingString:originClazzName];
-    Class clazz = NSClassFromString(kvoClazzName);
-    if (clazz) {
-        return clazz;
+    //1.先判断自己是不是改造后的类，如果不是要构造
+    Class clazz = object_getClass(self);
+    NSString *clazzString = NSStringFromClass(clazz);
+    if (![clazzString hasPrefix:PZYKVOClassPrefix]) {
+        clazz = createKVOClazz(clazz);
+        object_setClass(self, clazz);
     }
     
-    Class originClazz = object_getClass(self);
+    //2.如果是的话，判断自己有没有对应的setter
+    if (![self hasSlector:setterSelector]) {
+        const char *types = method_getTypeEncoding(setterMethod);
+        class_addMethod(clazz, setterSelector, (IMP)pzy_setter, types);
+    }
+
+    NSMutableArray *observers = objc_getAssociatedObject(self, (__bridge const void *)(PZYObserversKey));
+    if (!observers) {
+        observers = [NSMutableArray array];
+        objc_setAssociatedObject(self, (__bridge const void *)(PZYObserversKey), observers, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    PZYObserverInfo *info = [[PZYObserverInfo alloc] initWithObserver:observer keyPath:keyPath block:block];
+    [observers addObject:info];
+}
+
+static Class createKVOClazz(Class originClazz)
+{
+    NSString *originClazzName = NSStringFromClass(originClazz);
+    NSString *kvoClazzName = [PZYKVOClassPrefix stringByAppendingString:originClazzName];
+
+
     Class kvoClazz = objc_allocateClassPair(originClazz, kvoClazzName.UTF8String, 0);
+
+    Method clazzMethod = class_getInstanceMethod(originClazz, @selector(class));
+    const char *types = method_getTypeEncoding(clazzMethod);
+    class_addMethod(kvoClazz, @selector(class), (IMP)kvo_class, types);
+
     objc_registerClassPair(kvoClazz);
-    
-    Method originClassMethod = class_getInstanceMethod(originClazz, @selector(class));
-    const char *types = method_getTypeEncoding(originClassMethod);
-    class_addMethod(clazz, @selector(class), (IMP)pzyKVOClass, types);
-    
     return kvoClazz;
 }
 
+static Class kvo_class(id self, SEL _cmd){
+
+    return class_getSuperclass(object_getClass(self));
+}
+
+- (BOOL)hasSlector:(SEL)selector
+{
+    Class clazz = object_getClass(self);
+    unsigned int methodCount = 0;
+    Method *methodList = class_copyMethodList(clazz, &methodCount);
+    
+    for (unsigned int i = 0; i < methodCount; i++) {
+        Method method = methodList[i];
+        SEL aSelector = method_getName(method);
+        if (aSelector == selector) {
+            free(methodList);
+            return YES;
+        }
+    }
+    free(methodList);
+    return NO;
+}
+
 @end
+

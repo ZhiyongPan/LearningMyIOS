@@ -61,6 +61,7 @@
 		6C42E6F3201F65C000838008 /* PZYObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6F2201F65C000838008 /* PZYObserverInfo.m */; };
 		6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */; };
 		6C757CA6201B4705007C7EDA /* TestMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA5201B4705007C7EDA /* TestMemoryController.m */; };
+		6CB9EF4B2021E827005014AC /* TestVariableParameterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EF4A2021E827005014AC /* TestVariableParameterObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,8 @@
 		6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoreleasePoolObject.m; sourceTree = "<group>"; };
 		6C757CA4201B4705007C7EDA /* TestMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMemoryController.h; sourceTree = "<group>"; };
 		6C757CA5201B4705007C7EDA /* TestMemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestMemoryController.m; sourceTree = "<group>"; };
+		6CB9EF492021E827005014AC /* TestVariableParameterObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestVariableParameterObject.h; sourceTree = "<group>"; };
+		6CB9EF4A2021E827005014AC /* TestVariableParameterObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVariableParameterObject.m; sourceTree = "<group>"; };
 		CC863B0392EC27519E1D1D6F /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		E5483161FD57631CB0F85107 /* libPods-TestProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -609,6 +612,7 @@
 		6C42E6E9201F47BD00838008 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				6CB9EF482021E7DB005014AC /* Model */,
 				6C42E6ED201F4A7500838008 /* Category */,
 				6C42E6EA201F47CF00838008 /* TestRuntimeController.h */,
 				6C42E6EB201F47CF00838008 /* TestRuntimeController.m */,
@@ -644,6 +648,15 @@
 				6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */,
 			);
 			path = AutoreleasePool;
+			sourceTree = "<group>";
+		};
+		6CB9EF482021E7DB005014AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CB9EF492021E827005014AC /* TestVariableParameterObject.h */,
+				6CB9EF4A2021E827005014AC /* TestVariableParameterObject.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6CF5ED5F770B3999C3168D8B /* Pods */ = {
@@ -848,6 +861,7 @@
 				4C8A91E11F03CD6300D82F7B /* ViewController.m in Sources */,
 				4C5D1F671F29BA8800BEAE77 /* TestArrayModel.m in Sources */,
 				6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */,
+				6CB9EF4B2021E827005014AC /* TestVariableParameterObject.m in Sources */,
 				4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */,
 				6C13B2C51FE93E6A00CCCA64 /* DragBehavior.m in Sources */,
 				6C13B2731FE93CD900CCCA64 /* NSArray+testArray.m in Sources */,

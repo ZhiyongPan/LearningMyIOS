@@ -8,12 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^PZYObserverBlock)(id observedObject, NSString * observeKey, id oldValue, id newValue);
+typedef void (^PZYObserverBlock)(id observedObject, NSString *keyPath, id oldValue, id newValue);
 
 @interface NSObject (PZYKVO)
 
-- (void)PZY_addObserver:(NSObject *)object forKeyPath:(nonnull NSString *)keyPath withBlock:(PZYObserverBlock)block;
-
-- (void)PZY_removeObserver:(NSObject *)observer forKeyPath:(NSString *)keyPath;
+- (void)PZY_addObserver:(id)observer forKeyPath:(NSString *)keyPath withBlock:(PZYObserverBlock)block;
 
 @end
