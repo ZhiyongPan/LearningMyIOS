@@ -127,8 +127,8 @@
 
 - (void)pushToAnimationViewController
 {
-    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", nil];
-    NSLog(@"%@",array[3]);
+//    NSArray *array = [NSArray arrayWithObjects:@"1", @"2", nil];
+//    NSLog(@"%@",array[3]);
     CoreAnimationViewController *animationViewController = [[CoreAnimationViewController alloc] init];
     [self.navigationController pushViewController:animationViewController animated:YES];
 }

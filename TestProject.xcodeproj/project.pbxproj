@@ -27,6 +27,8 @@
 		4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */; };
 		4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */; };
+		6C0C70102047E6DC000A76DE /* TestNSOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C700F2047E6DC000A76DE /* TestNSOperationController.m */; };
+		6C0C70142047F3AF000A76DE /* TestThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0C70132047F3AF000A76DE /* TestThreadViewController.m */; };
 		6C13B2711FE93CD900CCCA64 /* SubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B26D1FE93CD900CCCA64 /* SubArray.m */; };
 		6C13B2721FE93CD900CCCA64 /* TestArrayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B26E1FE93CD900CCCA64 /* TestArrayViewController.m */; };
 		6C13B2731FE93CD900CCCA64 /* NSArray+testArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B26F1FE93CD900CCCA64 /* NSArray+testArray.m */; };
@@ -59,6 +61,7 @@
 		6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EB201F47CF00838008 /* TestRuntimeController.m */; };
 		6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */; };
 		6C42E6F3201F65C000838008 /* PZYObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6F2201F65C000838008 /* PZYObserverInfo.m */; };
+		6C516FA5202483920030E245 /* TestSocketController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C516FA4202483920030E245 /* TestSocketController.m */; };
 		6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */; };
 		6C757CA6201B4705007C7EDA /* TestMemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C757CA5201B4705007C7EDA /* TestMemoryController.m */; };
 		6CB9EF4B2021E827005014AC /* TestVariableParameterObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB9EF4A2021E827005014AC /* TestVariableParameterObject.m */; };
@@ -121,6 +124,10 @@
 		4CFD8C111F41D02B005D3C18 /* TestNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNavigationController.h; sourceTree = "<group>"; };
 		4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNavigationController.m; sourceTree = "<group>"; };
 		591F958A6193738359D04B06 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		6C0C700E2047E6DC000A76DE /* TestNSOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNSOperationController.h; sourceTree = "<group>"; };
+		6C0C700F2047E6DC000A76DE /* TestNSOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSOperationController.m; sourceTree = "<group>"; };
+		6C0C70122047F3AF000A76DE /* TestThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestThreadViewController.h; sourceTree = "<group>"; };
+		6C0C70132047F3AF000A76DE /* TestThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestThreadViewController.m; sourceTree = "<group>"; };
 		6C13B26B1FE93CD900CCCA64 /* NSArray+testArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+testArray.h"; sourceTree = "<group>"; };
 		6C13B26C1FE93CD900CCCA64 /* TestArrayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestArrayViewController.h; sourceTree = "<group>"; };
 		6C13B26D1FE93CD900CCCA64 /* SubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubArray.m; sourceTree = "<group>"; };
@@ -185,6 +192,8 @@
 		6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PZYKVO.m"; sourceTree = "<group>"; };
 		6C42E6F1201F65C000838008 /* PZYObserverInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZYObserverInfo.h; sourceTree = "<group>"; };
 		6C42E6F2201F65C000838008 /* PZYObserverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZYObserverInfo.m; sourceTree = "<group>"; };
+		6C516FA3202483920030E245 /* TestSocketController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSocketController.h; sourceTree = "<group>"; };
+		6C516FA4202483920030E245 /* TestSocketController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSocketController.m; sourceTree = "<group>"; };
 		6C757CA1201B463E007C7EDA /* TestAutoreleasePoolObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAutoreleasePoolObject.h; sourceTree = "<group>"; };
 		6C757CA2201B463E007C7EDA /* TestAutoreleasePoolObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAutoreleasePoolObject.m; sourceTree = "<group>"; };
 		6C757CA4201B4705007C7EDA /* TestMemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMemoryController.h; sourceTree = "<group>"; };
@@ -346,6 +355,7 @@
 		4CFD8BFA1F41C9C3005D3C18 /* TestViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6C0C70112047F3A0000A76DE /* TestThread */,
 				4CFD8C0A1F41CE85005D3C18 /* HomePage */,
 				4CFD8BFE1F41CDD5005D3C18 /* Fundation */,
 				4CFD8BFF1F41CDD5005D3C18 /* Main */,
@@ -392,6 +402,24 @@
 				4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */,
 			);
 			path = HomePage;
+			sourceTree = "<group>";
+		};
+		6C0C700D2047E6BD000A76DE /* TestNSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				6C0C700E2047E6DC000A76DE /* TestNSOperationController.h */,
+				6C0C700F2047E6DC000A76DE /* TestNSOperationController.m */,
+			);
+			path = TestNSOperation;
+			sourceTree = "<group>";
+		};
+		6C0C70112047F3A0000A76DE /* TestThread */ = {
+			isa = PBXGroup;
+			children = (
+				6C0C70122047F3AF000A76DE /* TestThreadViewController.h */,
+				6C0C70132047F3AF000A76DE /* TestThreadViewController.m */,
+			);
+			path = TestThread;
 			sourceTree = "<group>";
 		};
 		6C13B2691FE93CC000CCCA64 /* Foundation */ = {
@@ -588,6 +616,7 @@
 		6C13B2BC1FE93E6A00CCCA64 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				6C516FA2202483780030E245 /* Socket */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -595,6 +624,7 @@
 		6C13B2BD1FE93E6A00CCCA64 /* Thread */ = {
 			isa = PBXGroup;
 			children = (
+				6C0C700D2047E6BD000A76DE /* TestNSOperation */,
 				6C13B2BE1FE93E6A00CCCA64 /* TestGCD */,
 			);
 			path = Thread;
@@ -629,6 +659,15 @@
 				6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		6C516FA2202483780030E245 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				6C516FA3202483920030E245 /* TestSocketController.h */,
+				6C516FA4202483920030E245 /* TestSocketController.m */,
+			);
+			path = Socket;
 			sourceTree = "<group>";
 		};
 		6C757C9F201B4605007C7EDA /* Memory */ = {
@@ -863,6 +902,7 @@
 				6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */,
 				6CB9EF4B2021E827005014AC /* TestVariableParameterObject.m in Sources */,
 				4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */,
+				6C0C70102047E6DC000A76DE /* TestNSOperationController.m in Sources */,
 				6C13B2C51FE93E6A00CCCA64 /* DragBehavior.m in Sources */,
 				6C13B2731FE93CD900CCCA64 /* NSArray+testArray.m in Sources */,
 				6C757CA6201B4705007C7EDA /* TestMemoryController.m in Sources */,
@@ -882,6 +922,7 @@
 				6C13B2CD1FE93E6A00CCCA64 /* Animator.m in Sources */,
 				6C757CA3201B463E007C7EDA /* TestAutoreleasePoolObject.m in Sources */,
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
+				6C0C70142047F3AF000A76DE /* TestThreadViewController.m in Sources */,
 				6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */,
 				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
 				6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */,
@@ -901,6 +942,7 @@
 				6C13B2721FE93CD900CCCA64 /* TestArrayViewController.m in Sources */,
 				6C13B2CB1FE93E6A00CCCA64 /* VCTransitionViewController.m in Sources */,
 				6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */,
+				6C516FA5202483920030E245 /* TestSocketController.m in Sources */,
 				6C13B2C71FE93E6A00CCCA64 /* DragableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
