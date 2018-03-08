@@ -27,4 +27,13 @@
 #define RightButtonFrameX SCREEN_WIDTH - ButtonWidth
 #define ButtonFrameY(index) 100 + (ButtonHeight + 20) * (index - 1)
 
-
+#define AddButton(leftButton, lineIndex, title) \
+({ \
+UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];\
+[button setTitle:title forState:UIControlStateNormal];\
+button.backgroundColor = [UIColor redColor];\
+button.frame = CGRectMake(leftButton ? 0 : RightButtonFrameX, ButtonFrameY(4), ButtonWidth, ButtonHeight);\
+SEL sel = NSSelectorFromString([NSString stringWithFormat:@"on%@ButtonClicked", title]);\
+[button addTarget:self action:sel forControlEvents:UIControlEventTouchUpInside];\
+[self.view addSubview:button];\
+})

@@ -22,7 +22,36 @@
  它起到一个承上启下的作用，在他之前的任务都在他之前执行，在他之后的任务都在他之后执行
  */
 
+/*
+ dispatch_benchmark
+ 计算一段代码执行花费的平均时间，在性能测试时很实用
+ */
+
+/*
+ dispatch_source
+ dispatch_source是用来监听一系列时间的接口，常见的有：
+ *  DISPATCH_SOURCE_TYPE_DATA_ADD:        n/a
+ *  DISPATCH_SOURCE_TYPE_DATA_OR:        n/a
+ *  DISPATCH_SOURCE_TYPE_MACH_SEND:      mach port (mach_port_t)
+ *  DISPATCH_SOURCE_TYPE_MACH_RECV:      mach port (mach_port_t)
+ *  DISPATCH_SOURCE_TYPE_MEMORYPRESSURE  n/a
+ *  DISPATCH_SOURCE_TYPE_PROC:            process identifier (pid_t)  //用来监视进程
+ *  DISPATCH_SOURCE_TYPE_READ:            file descriptor (int)
+ *  DISPATCH_SOURCE_TYPE_SIGNAL:          signal number (int)
+ *  DISPATCH_SOURCE_TYPE_TIMER:          n/a
+ *  DISPATCH_SOURCE_TYPE_VNODE:          file descriptor (int)    //------用来监视文件变动的事件，例如文件被写入或删除
+ *  DISPATCH_SOURCE_TYPE_WRITE:          file descriptor (int)
+ 其中DISPATCH_SOURCE_TYPE_TIMER可以用来创建计时器
+ */
+
+/*
+ dispatch的底层实现方式
+ dispatch_async异步,dispatch_async会判断相关队列时什么队列，如果是并发队列，就使用链表来存储提交的任务block，然后在底层线程池中一次取出block来执行。如果是串行队列，则转到dispatch_barrier_async_f执行。
+ dispatch_sync同步，同步的话不管是什么队列都会在当前线程执行，在执行的时候会使用信号量来保证每次只有一个任务被执行
+ */
+
 #import "TestGCDViewController.h"
+#import<libkern/OSAtomic.h>
 
 @interface TestGCDViewController ()
 
@@ -48,6 +77,12 @@
     [self addSemaphoreButton];
     
     [self addCreateButton];
+    
+    [self addBenchmarkButton];
+    
+    [self addSourceTimerButton];
+    
+    AddButton(NO, 4, @"TestDeadLock");
 }
 
 - (void)addTestGroupButton
@@ -218,5 +253,88 @@
 {
     dispatch_semaphore_signal(self.semaphore);
 }
+
+- (void)addBenchmarkButton
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"Benchmark" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(RightButtonFrameX, ButtonFrameY(3), ButtonWidth, ButtonHeight);
+    [button addTarget:self action:@selector(onBenchmarkButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)onBenchmarkButtonClicked
+{
+    //计算把1000个对象加到array里面费时，计算10000遍求平均时间
+    size_t const size = 1000;
+    uint64_t dispatch_benchmark(size_t count, void (^block)(void));
+    NSLog(@"bench mark begin");
+    uint64_t n = dispatch_benchmark(10000, ^{
+        @autoreleasepool {
+            id obj = @42;
+            NSMutableArray *array = [NSMutableArray array];
+            for (size_t i = 0; i < size; i++) {
+                [array addObject:obj];
+            }
+        }
+    });
+    NSLog(@"cost %@", @(n));
+    NSLog(@"bench mark end");
+}
+
+- (void)addSourceTimerButton
+{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:@"SourceTimer" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor redColor];
+    button.frame = CGRectMake(0, ButtonFrameY(4), ButtonWidth, ButtonHeight);
+    [button addTarget:self action:@selector(onSourceTimerButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void)onSourceTimerButtonClicked
+{
+    __block uint64_t timeOutCount = 10;
+    dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+    dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC, 0);//注：最后一个参数是一个余地值，按我的理解应该就是精确度能容忍的范围。注意：如果不必要地指定了一个低余地值会比较费电
+    dispatch_source_set_event_handler(timer, ^{
+        OSAtomicDecrement64(&timeOutCount);
+        NSLog(@"timeOutCount : %@", @(timeOutCount));
+        if (timeOutCount == 0) {
+            dispatch_source_cancel(timer);
+        }
+    });
+    dispatch_source_set_cancel_handler(timer, ^{
+        
+        NSLog(@"source timer canceled");
+    });
+    dispatch_resume(timer);
+}
+
+- (void)onTestDeadLockButtonClicked
+{
+    dispatch_queue_t serialQueue = dispatch_queue_create("com.pzy.TestDeaLockSerial", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t serialQueue2 = dispatch_queue_create("com.pzy.TestDeaLockSerial2", DISPATCH_QUEUE_SERIAL);
+    NSLog(@"onTestDeadLockButtonClicked, %@", [NSThread currentThread]);
+    dispatch_sync(serialQueue, ^{
+        NSLog(@"serialQueue, %@", [NSThread currentThread]);
+        dispatch_sync(serialQueue2, ^{
+            NSLog(@"serialQueue2, %@", [NSThread currentThread]);
+        });
+    });//不死锁
+    
+    dispatch_sync(serialQueue, ^{
+        NSLog(@"serialQueue, %@", [NSThread currentThread]);
+        dispatch_sync(serialQueue, ^{
+            NSLog(@"serialQueue2, %@", [NSThread currentThread]);
+        });
+    });//死锁
+    
+    //注：将serialQueue2换成serialQueue就换造成死锁。因为serialQueue是一个串行队列，队列中的任务只能一个个执行，而在用同步的方法将block添加到串行队列中时会阻塞当前队列。而最外层的block运行在serialQueue，当将内层block再添加到serialQueue时，外层block任务会阻塞等内层block执行完再继续往下执行，但是内层block是加在外层block后面的，必须等到外层block执行完它才能执行，就造成了互相等待形成死锁。
+}
+
+/************    线程安全     ***********************/
+/* 如何保证线程安全 */
 
 @end

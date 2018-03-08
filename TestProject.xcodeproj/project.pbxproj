@@ -58,6 +58,7 @@
 		6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B81FE93E6900CCCA64 /* ToViewController.m */; };
 		6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */; };
 		6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */; };
+		6C1D89A32050086800E2C628 /* TestThreadLockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D89A22050086800E2C628 /* TestThreadLockController.m */; };
 		6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EB201F47CF00838008 /* TestRuntimeController.m */; };
 		6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EF201F4ACC00838008 /* NSObject+PZYKVO.m */; };
 		6C42E6F3201F65C000838008 /* PZYObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6F2201F65C000838008 /* PZYObserverInfo.m */; };
@@ -186,6 +187,8 @@
 		6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBlockAnimation.m"; sourceTree = "<group>"; };
 		6C13B2BF1FE93E6A00CCCA64 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
 		6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
+		6C1D89A12050086700E2C628 /* TestThreadLockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestThreadLockController.h; sourceTree = "<group>"; };
+		6C1D89A22050086800E2C628 /* TestThreadLockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestThreadLockController.m; sourceTree = "<group>"; };
 		6C42E6EA201F47CF00838008 /* TestRuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeController.h; sourceTree = "<group>"; };
 		6C42E6EB201F47CF00838008 /* TestRuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeController.m; sourceTree = "<group>"; };
 		6C42E6EE201F4ACC00838008 /* NSObject+PZYKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PZYKVO.h"; sourceTree = "<group>"; };
@@ -626,6 +629,8 @@
 			children = (
 				6C0C700D2047E6BD000A76DE /* TestNSOperation */,
 				6C13B2BE1FE93E6A00CCCA64 /* TestGCD */,
+				6C1D89A12050086700E2C628 /* TestThreadLockController.h */,
+				6C1D89A22050086800E2C628 /* TestThreadLockController.m */,
 			);
 			path = Thread;
 			sourceTree = "<group>";
@@ -925,6 +930,7 @@
 				6C0C70142047F3AF000A76DE /* TestThreadViewController.m in Sources */,
 				6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */,
 				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
+				6C1D89A32050086800E2C628 /* TestThreadLockController.m in Sources */,
 				6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */,
 				6C13B2C21FE93E6A00CCCA64 /* PZYView.m in Sources */,
 				6C13B2C31FE93E6A00CCCA64 /* PZYUIViewAnimationState.m in Sources */,
