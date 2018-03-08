@@ -6,6 +6,12 @@
 //  Copyright © 2017年 pzy. All rights reserved.
 //
 
+/*
+ GCD底部维护着一个线程池，不管是Serial Queue还是Concurrent Queue，他们的任务其实都是由这个线程池来管理的，并不是每个Queue管理着一个线程池。
+ 在Queue中执行任务其实是在他的target Queue中执行的，在创建Queue的时候，不管是Serial Queue还是Concurrent Queue，内部都会调用_dispatch_get_root_queue()方法来获取target Queue，其实就只不过是从 root queue 列表里找一个相应优先级的 root queue，自定义的Queue更像是root Queue的“代理”。其实root Queue其实就是Global Queue，GCD底层目前有15个Global Queue，其中1与主线程相关，定义在init.c; 2、3是内部管理Queue用的，定义在Queue.c; 4、15分别有不同的优先级以及是否是overcommit（带 overcommit 参数的表示该 queue 在执行 block 时，无论系统多忙都会新开一个线程）也是定义在queue.c，其中4、5有点搞不懂是干嘛的。
+ 既然所有的Queue都共有一个线程池，那么怎么来判断是否要并发呢？这个就是由Queue本身的dq_width字段来决定了，dq_width属性的值就是能够并发执行的最大任务数，concurrent queue的值为DISPATCH_QUEUE_WIDTH_MAX（#define DISPATCH_QUEUE_WIDTH_MAX UINT16_MAX），serial queue的值为1。
+*/
+
 /*!
  dispatch_group
  将一些任务打包成一个group，当成一个组
@@ -83,6 +89,7 @@
     [self addSourceTimerButton];
     
     AddButton(NO, 4, @"TestDeadLock");
+    AddButton(YES, 5, @"QoS");
 }
 
 - (void)addTestGroupButton
@@ -332,6 +339,15 @@
     });//死锁
     
     //注：将serialQueue2换成serialQueue就换造成死锁。因为serialQueue是一个串行队列，队列中的任务只能一个个执行，而在用同步的方法将block添加到串行队列中时会阻塞当前队列。而最外层的block运行在serialQueue，当将内层block再添加到serialQueue时，外层block任务会阻塞等内层block执行完再继续往下执行，但是内层block是加在外层block后面的，必须等到外层block执行完它才能执行，就造成了互相等待形成死锁。
+}
+
+- (void)onQoSButtonClicked
+{
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(QOS_CLASS_DEFAULT, 0);
+    dispatch_queue_t queue = dispatch_queue_create("com.pzy.TestQoS", DISPATCH_QUEUE_CONCURRENT);
+    dispatch_queue_t queue2 = dispatch_queue_create_with_target("com.pzy.TestQoS2", DISPATCH_QUEUE_CONCURRENT, DISPATCH_TARGET_QUEUE_DEFAULT);
+    NSLog(@"");
+    //这边不知道怎么获取queue的属性信息，要不然可以看看这两个的targetQueue是不是一样的。
 }
 
 /************    线程安全     ***********************/

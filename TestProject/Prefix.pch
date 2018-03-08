@@ -32,7 +32,7 @@
 UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];\
 [button setTitle:title forState:UIControlStateNormal];\
 button.backgroundColor = [UIColor redColor];\
-button.frame = CGRectMake(leftButton ? 0 : RightButtonFrameX, ButtonFrameY(4), ButtonWidth, ButtonHeight);\
+button.frame = CGRectMake(leftButton ? 0 : RightButtonFrameX, ButtonFrameY(lineIndex), ButtonWidth, ButtonHeight);\
 SEL sel = NSSelectorFromString([NSString stringWithFormat:@"on%@ButtonClicked", title]);\
 [button addTarget:self action:sel forControlEvents:UIControlEventTouchUpInside];\
 [self.view addSubview:button];\

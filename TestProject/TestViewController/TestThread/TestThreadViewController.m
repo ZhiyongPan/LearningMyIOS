@@ -9,6 +9,8 @@
 #import "TestThreadViewController.h"
 #import "TestGCDViewController.h"
 #import "TestNSOperationController.h"
+#import "TestRunLoopController.h"
+#import "TestNSOperationController.h"
 
 @interface TestThreadViewController ()
 
@@ -20,6 +22,9 @@
     [super viewDidLoad];
     
     [self addGCDButton];
+    
+    AddButton(NO, 1, @"RunLoop");
+    AddButton(YES, 2, @"NSOperation");
 }
 
 - (void)addGCDButton
@@ -49,6 +54,18 @@
 }
 
 - (void)gotoNSOperationController
+{
+    TestNSOperationController *controller = [[TestNSOperationController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)onRunLoopButtonClicked
+{
+    TestRunLoopController *controller = [[TestRunLoopController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)onNSOperationButtonClicked
 {
     TestNSOperationController *controller = [[TestNSOperationController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
