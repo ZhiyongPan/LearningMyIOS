@@ -56,6 +56,10 @@
  dispatch_sync同步，同步的话不管是什么队列都会在当前线程执行，在执行的时候会使用信号量来保证每次只有一个任务被执行
  */
 
+/*
+ 
+ */
+
 #import "TestGCDViewController.h"
 #import<libkern/OSAtomic.h>
 
@@ -317,6 +321,7 @@
         NSLog(@"source timer canceled");
     });
     dispatch_resume(timer);
+    dispatch_get_specific("key");
 }
 
 - (void)onTestDeadLockButtonClicked
@@ -330,7 +335,7 @@
             NSLog(@"serialQueue2, %@", [NSThread currentThread]);
         });
     });//不死锁
-    
+
     dispatch_sync(serialQueue, ^{
         NSLog(@"serialQueue, %@", [NSThread currentThread]);
         dispatch_sync(serialQueue, ^{
@@ -339,6 +344,34 @@
     });//死锁
     
     //注：将serialQueue2换成serialQueue就换造成死锁。因为serialQueue是一个串行队列，队列中的任务只能一个个执行，而在用同步的方法将block添加到串行队列中时会阻塞当前队列。而最外层的block运行在serialQueue，当将内层block再添加到serialQueue时，外层block任务会阻塞等内层block执行完再继续往下执行，但是内层block是加在外层block后面的，必须等到外层block执行完它才能执行，就造成了互相等待形成死锁。
+    //注：只有使用同步方法将任务加到串行队列才会阻塞这个队列，使用同步方法加任务到并发队列并不会阻塞这个并发队列
+    
+    //特别注意：像下面这样写也会导致死锁
+    dispatch_set_target_queue(serialQueue2, serialQueue);
+    dispatch_sync(serialQueue, ^{
+        NSLog(@"serialQueue, %@", [NSThread currentThread]);
+        dispatch_sync(serialQueue2, ^{
+            NSLog(@"serialQueue2, %@", [NSThread currentThread]);
+        });
+    });//死锁
+    
+    dispatch_queue_t gQueue1 = dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0);
+    dispatch_queue_t gQueue2 = dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0);
+    dispatch_sync(gQueue1, ^{
+        NSLog(@"gQueue1, %@", [NSThread currentThread]);
+        dispatch_sync(gQueue2, ^{
+            NSLog(@"gQueue2, %@", [NSThread currentThread]);
+        });
+    });//不死锁,因为globalQueue是并发队列
+    
+    dispatch_queue_t serialQueue3 = dispatch_queue_create("com.pzy.TestDeaLockSerial3", DISPATCH_QUEUE_SERIAL);
+    dispatch_set_target_queue(serialQueue3, serialQueue);
+    dispatch_sync(serialQueue3, ^{
+        NSLog(@"gQueue3, %@", [NSThread currentThread]);
+        dispatch_sync(serialQueue2, ^{
+            NSLog(@"serialQueue2, %@", [NSThread currentThread]);
+        });
+    });//死锁
 }
 
 - (void)onQoSButtonClicked
