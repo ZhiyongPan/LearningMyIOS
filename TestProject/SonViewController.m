@@ -29,16 +29,16 @@
 //    [self.view addSubview:button];
     
     /*------------------view的bounds-----------------------*/
-//    UIView *view1 = [[UIView alloc] init];
-//    view1.frame = CGRectMake(10, 50, 250, 250);
-//    view1.backgroundColor = [UIColor redColor];
-//    view1.bounds = CGRectMake(20, 20, 150, 150);
-//    [self.view addSubview:view1];
-//    
-//    UIView *view2 = [[UIView alloc] init];
-//    view2.frame = CGRectMake(0, 00, 50, 50);
-//    view2.backgroundColor = [UIColor yellowColor];
-//    [view1 addSubview:view2];
+    UIView *view1 = [[UIView alloc] init];
+    view1.frame = CGRectMake(10, 50, 250, 250);
+    view1.backgroundColor = [UIColor redColor];
+    view1.bounds = CGRectMake(20, 20, 150, 150);
+    [self.view addSubview:view1];
+    
+    UIView *view2 = [[UIView alloc] init];
+    view2.frame = CGRectMake(0, 00, 50, 50);
+    view2.backgroundColor = [UIColor yellowColor];
+    [view1 addSubview:view2];
     
     
     /*-------------------layer的anchorPoint和position----------------------*/

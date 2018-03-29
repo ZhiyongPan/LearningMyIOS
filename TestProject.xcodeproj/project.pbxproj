@@ -23,7 +23,6 @@
 		4CFD1EC61F0E617A00191EA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFD1EC51F0E617A00191EA5 /* Assets.xcassets */; };
 		4CFD8BFD1F41C9DF005D3C18 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */; };
 		4CFD8C061F41CE01005D3C18 /* TestFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C051F41CE01005D3C18 /* TestFoundationViewController.m */; };
-		4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */; };
 		4CFD8C0D1F41CE92005D3C18 /* TestHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */; };
 		4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C0F1F41CEFF005D3C18 /* TestMainViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4CFD8C131F41D02B005D3C18 /* TestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFD8C121F41D02B005D3C18 /* TestNavigationController.m */; };
@@ -58,6 +57,8 @@
 		6C13B2D51FE93E6A00CCCA64 /* ToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2B81FE93E6900CCCA64 /* ToViewController.m */; };
 		6C13B2D61FE93E6A00CCCA64 /* UIView+CustomBlockAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */; };
 		6C13B2D71FE93E6A00CCCA64 /* TestGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */; };
+		6C1468D7206D3328008C3129 /* TestUIKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1468D6206D3328008C3129 /* TestUIKitController.m */; };
+		6C1468DB206D3380008C3129 /* TestViewAndLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1468DA206D3380008C3129 /* TestViewAndLayerController.m */; };
 		6C1D89A32050086800E2C628 /* TestThreadLockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C1D89A22050086800E2C628 /* TestThreadLockController.m */; };
 		6C42A39C2051132D006A85E6 /* TestRunLoopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42A39B2051132D006A85E6 /* TestRunLoopController.m */; };
 		6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C42E6EB201F47CF00838008 /* TestRuntimeController.m */; };
@@ -117,8 +118,6 @@
 		4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
 		4CFD8C041F41CE01005D3C18 /* TestFoundationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFoundationViewController.h; sourceTree = "<group>"; };
 		4CFD8C051F41CE01005D3C18 /* TestFoundationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestFoundationViewController.m; sourceTree = "<group>"; };
-		4CFD8C071F41CE0E005D3C18 /* TestMyInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMyInfoViewController.h; sourceTree = "<group>"; };
-		4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMyInfoViewController.m; sourceTree = "<group>"; };
 		4CFD8C0B1F41CE92005D3C18 /* TestHomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHomePageViewController.h; sourceTree = "<group>"; };
 		4CFD8C0C1F41CE92005D3C18 /* TestHomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHomePageViewController.m; sourceTree = "<group>"; };
 		4CFD8C0E1F41CEFF005D3C18 /* TestMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMainViewController.h; sourceTree = "<group>"; };
@@ -188,6 +187,10 @@
 		6C13B2BB1FE93E6900CCCA64 /* UIView+CustomBlockAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomBlockAnimation.m"; sourceTree = "<group>"; };
 		6C13B2BF1FE93E6A00CCCA64 /* TestGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGCDViewController.h; sourceTree = "<group>"; };
 		6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGCDViewController.m; sourceTree = "<group>"; };
+		6C1468D5206D3328008C3129 /* TestUIKitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestUIKitController.h; sourceTree = "<group>"; };
+		6C1468D6206D3328008C3129 /* TestUIKitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUIKitController.m; sourceTree = "<group>"; };
+		6C1468D9206D3380008C3129 /* TestViewAndLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewAndLayerController.h; sourceTree = "<group>"; };
+		6C1468DA206D3380008C3129 /* TestViewAndLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewAndLayerController.m; sourceTree = "<group>"; };
 		6C1D89A12050086700E2C628 /* TestThreadLockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestThreadLockController.h; sourceTree = "<group>"; };
 		6C1D89A22050086800E2C628 /* TestThreadLockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestThreadLockController.m; sourceTree = "<group>"; };
 		6C42A39A2051132D006A85E6 /* TestRunLoopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRunLoopController.h; sourceTree = "<group>"; };
@@ -365,7 +368,7 @@
 				4CFD8C0A1F41CE85005D3C18 /* HomePage */,
 				4CFD8BFE1F41CDD5005D3C18 /* Fundation */,
 				4CFD8BFF1F41CDD5005D3C18 /* Main */,
-				4CFD8C001F41CDD5005D3C18 /* MyInfo */,
+				4CFD8C001F41CDD5005D3C18 /* UIKit */,
 				4CFD8BFB1F41C9DF005D3C18 /* Mediator.h */,
 				4CFD8BFC1F41C9DF005D3C18 /* Mediator.m */,
 			);
@@ -392,13 +395,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		4CFD8C001F41CDD5005D3C18 /* MyInfo */ = {
+		4CFD8C001F41CDD5005D3C18 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				4CFD8C071F41CE0E005D3C18 /* TestMyInfoViewController.h */,
-				4CFD8C081F41CE0E005D3C18 /* TestMyInfoViewController.m */,
+				6C1468D5206D3328008C3129 /* TestUIKitController.h */,
+				6C1468D6206D3328008C3129 /* TestUIKitController.m */,
 			);
-			path = MyInfo;
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		4CFD8C0A1F41CE85005D3C18 /* HomePage */ = {
@@ -483,6 +486,7 @@
 		6C13B2841FE93E6900CCCA64 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				6C1468D8206D3365008C3129 /* View&Layer */,
 				6C13B2851FE93E6900CCCA64 /* SubClass */,
 				6C13B28E1FE93E6900CCCA64 /* CoreAnimationPractice */,
 				6C13B2B91FE93E6900CCCA64 /* UIViewCategory */,
@@ -646,6 +650,15 @@
 				6C13B2C01FE93E6A00CCCA64 /* TestGCDViewController.m */,
 			);
 			path = TestGCD;
+			sourceTree = "<group>";
+		};
+		6C1468D8206D3365008C3129 /* View&Layer */ = {
+			isa = PBXGroup;
+			children = (
+				6C1468D9206D3380008C3129 /* TestViewAndLayerController.h */,
+				6C1468DA206D3380008C3129 /* TestViewAndLayerController.m */,
+			);
+			path = "View&Layer";
 			sourceTree = "<group>";
 		};
 		6C42A39920511312006A85E6 /* TestRunLoop */ = {
@@ -943,7 +956,6 @@
 				4CFD8C101F41CEFF005D3C18 /* TestMainViewController.m in Sources */,
 				6C0C70142047F3AF000A76DE /* TestThreadViewController.m in Sources */,
 				6C42E6F0201F4ACC00838008 /* NSObject+PZYKVO.m in Sources */,
-				4CFD8C091F41CE0E005D3C18 /* TestMyInfoViewController.m in Sources */,
 				6C1D89A32050086800E2C628 /* TestThreadLockController.m in Sources */,
 				6C13B2CE1FE93E6A00CCCA64 /* BubbleAnimator.m in Sources */,
 				6C13B2C21FE93E6A00CCCA64 /* PZYView.m in Sources */,
@@ -961,8 +973,10 @@
 				6C13B2C41FE93E6A00CCCA64 /* PZYSavedAnimationState.m in Sources */,
 				6C13B2721FE93CD900CCCA64 /* TestArrayViewController.m in Sources */,
 				6C13B2CB1FE93E6A00CCCA64 /* VCTransitionViewController.m in Sources */,
+				6C1468D7206D3328008C3129 /* TestUIKitController.m in Sources */,
 				6C42E6EC201F47CF00838008 /* TestRuntimeController.m in Sources */,
 				6C516FA5202483920030E245 /* TestSocketController.m in Sources */,
+				6C1468DB206D3380008C3129 /* TestViewAndLayerController.m in Sources */,
 				6C13B2C71FE93E6A00CCCA64 /* DragableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

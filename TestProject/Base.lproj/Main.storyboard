@@ -28,7 +28,7 @@
         <!--我的-->
         <scene sceneID="T5p-QB-lVj">
             <objects>
-                <viewController title="我的" id="vDr-vc-HyS" customClass="TestMyInfoViewController" sceneMemberID="viewController">
+                <viewController title="我的" id="vDr-vc-HyS" customClass="TestUIKitController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="48d-tB-0xj"/>
                         <viewControllerLayoutGuide type="bottom" id="WUW-bg-jto"/>
@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="wHT-Yd-SGz"/>
+                    <tabBarItem key="tabBarItem" title="UIKit" id="wHT-Yd-SGz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBt-3N-Shd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
